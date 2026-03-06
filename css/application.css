@@ -1,0 +1,93 @@
+section#application label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.perks {
+  background: #060e08;
+  padding: 10px;
+  border: 2px solid;
+  margin-bottom: 15px;
+}
+.perks h2 {
+  margin: 5px;
+}
+.perks p {
+  margin: 0;
+  color: antiquewhite;
+}
+.achiev {
+  background: #060e08;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #060e08;
+}
+.achiev h3 {
+  margin: 0;
+  color: forestgreen;
+}
+.achiev p {
+  font-size: 15px;
+  color: darkgrey;
+}
+.apply-section {
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid #060e08;
+}
+.apply-section h3 {
+  margin: 5px;
+}
+.apply-section p {
+  font-size: 15px;
+  color: ghostwhite;
+}
+.tracker {
+  position: absolute;
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.input-box {
+  margin-bottom: 15px;
+}
+section#application input,
+section#application select {
+  background: dimgray;
+  border-radius: 10px;
+  color: aliceblue;
+  border: 1px solid;
+  padding: 10px;
+}
+.form-title{
+margin-bottom:30px;
+}
+.form-title h2{
+  margin: 0;
+}
+.form-title p{
+  color: var(--gray);
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.apply-section button {
+  background: green;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.apply-section button:hover {
+    background: green;
+}

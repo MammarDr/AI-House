@@ -1,0 +1,180 @@
+section#home-page {
+}
+
+section#home-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+section#home-page h1 {
+  font-size: clamp(1.5rem, calc(10vw + 1rem), 5rem);
+  line-height: 78px;
+}
+
+section#home-page h1 span {
+  background-image: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+section#home-page .container .introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+section#home-page .container .introduction .highlight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 0.35rem 0.75rem;
+  border-radius: 99px;
+  background-color: rgb(var(--color-secondary), 0.1);
+  backdrop-filter: 100px;
+  border: 1px solid rgb(var(--color-secondary));
+}
+
+section#home-page .container .introduction .highlight span {
+  color: rgb(var(--color-secondary));
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+section#home-page .container .introduction .highlight .dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(var(--color-secondary));
+  border-radius: 9999px;
+}
+
+section#home-page .container .introduction .description {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(var(--theme-text-secondary), 0.85);
+  width: 90%;
+}
+
+section#home-page .container .introduction .nav-btns {
+  display: flex;
+  gap: 20px;
+}
+
+section#home-page .container .introduction .nav-btns a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+}
+
+section#home-page .container .introduction .nav-btns a:nth-child(1) {
+  font-weight: 600;
+  background-color: rgb(var(--theme-text));
+  color: rgb(var(--theme-background));
+}
+
+section#home-page .container .introduction .nav-btns a:nth-child(1):hover {
+  scale: 1.05;
+}
+
+section#home-page .container .introduction .nav-btns a:nth-child(2) {
+  background-color: rgb(var(--theme-background));
+  color: rgb(var(--theme-text));
+  border: 2px solid rgb(var(--theme-text), 0.25);
+}
+section#home-page .container .introduction .nav-btns a:nth-child(2):hover {
+  background-color: rgb(var(--theme-text), 0.025);
+}
+
+section#home-page .container .introduction .reputation {
+  color: rgb(var(--theme-text-secondary));
+  font-weight: 500;
+  font-size: 0.875rem;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.219);
+  padding-top: 20px;
+  opacity: 0.8;
+  width: 90%;
+}
+
+section#home-page .container .introduction .reputation > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+section#home-page .container .introduction .reputation > div div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+section#home-page .container .introduction .reputation > div span {
+  color: rgb(var(--theme-text-secondary));
+  font-weight: 800;
+}
+
+section#home-page .container .introduction .reputation > div img {
+  opacity: 0.8;
+}
+
+section#home-page .image {
+  position: relative;
+  padding: 2rem;
+  background-color: transparent;
+  backdrop-filter: 40px;
+  border-radius: 60px;
+}
+section#home-page .image .background-bubble {
+  position: absolute;
+  top: 17%;
+  left: -15%;
+  background-image: linear-gradient(
+    to top right,
+    rgba(255, 127, 0, 0.2),
+    rgba(0, 168, 89, 0.2)
+  );
+  filter: blur(54px);
+  width: 500px;
+  height: 500px;
+}
+section#home-page .image img {
+  border: 1px solid rgb(var(--theme-text), 0.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.144);
+  border-radius: 20px;
+}
+
+/* 
+section#home-page .box {
+  width: 50%;
+  height: 200px;
+}
+
+section#home-page .box1 {
+  width: 50%;
+}
+
+section#home-page .box2 {
+  width: 50%;
+}
+section#home-page .brain {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  background: linear-gradient(
+    42deg,
+    rgba(255, 225, 196, 1) 12%,
+    rgba(255, 225, 196, 1) 11%,
+    rgba(255, 255, 255, 1) 49%,
+    rgba(255, 255, 255, 1) 55%,
+    rgba(201, 255, 238, 1) 87%,
+    rgba(197, 240, 230, 1) 100%
+  );
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+} */

@@ -1,0 +1,85 @@
+.team {
+  color: #10b981;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.bar {
+  height: 5px;
+  flex: auto;
+  background: #18181b;
+  border-radius: 10px;
+}
+section#our-team h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.feature {
+  color: #f97316;
+}
+.subtitle {
+  color: #94a3b8;
+  font-size: 18px;
+  max-width: 500 px;
+  margin: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat (auto-fit);
+  gap: 30px;
+  margin-top: 50px;
+}
+.card {
+  background: #18181b;
+  border-radius: 20px;
+  padding: 40px 25px;
+  text-align: center;
+  border: 1px solid #27272a;
+}
+.card:hover {
+  border-color: #047904;
+  box-shadow: 0 20px #ffffff00;
+}
+.pfp {
+  width: 80px;
+  height: 80px;
+  background: #022c22;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 15px;
+  color: #10b981;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid;
+}
+.role {
+  color: #05563c;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.bio {
+  color: #a1a1aa;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #cbd5f5;
+  border: 1px solid #ffffff00;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+.social:hover {
+  color: #047904;
+  border-color: #05563c;
+}
