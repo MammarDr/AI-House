@@ -49,6 +49,16 @@ body {
   background-image: radial-gradient(#cbd5e121 1px, transparent 1px);
 }
 
+.theme {
+  color: #fff;
+  fill: #fff;
+}
+
+.dark .theme {
+  color: #000;
+  fill: #000;
+}
+
 header {
   position: fixed;
   z-index: 10;
@@ -70,6 +80,10 @@ h3 {
   color: rgb(var(--theme-text));
 }
 
+:after,
+:before,
+button,
+form,
 input,
 strong,
 p,
@@ -102,6 +116,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .snap-container {
@@ -138,6 +159,51 @@ section {
   width: 15px;
   height: 15px;
   background-color: rgb(var(--color-primary));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgb(var(--theme-background));
+  padding: 2rem;
+  border: 1px solid rgb(var(--theme-text), 0.05);
+  border-radius: 20px;
+}
+
+.title {
+  font-size: clamp(1.5rem, 5vw + 1rem, 5rem);
+  line-height: 78px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 0.35rem 0.75rem;
+  border-radius: 99px;
+  background-color: rgb(var(--color-secondary), 0.1);
+  border: 1px solid rgb(var(--color-secondary));
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.tag span {
+  color: rgb(var(--color-secondary));
+}
+
+.tag .dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(var(--color-secondary));
+  border-radius: 9999px;
+}
+
+.highlight {
+  background-image: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .bg-touch-1 {
@@ -182,8 +248,39 @@ section {
 
 svg {
   pointer-events: none;
-  fill: rgb(var(--theme-background));
+  fill: rgb(var(--theme-text));
 }
-header{
+header {
   display: flex;
+  margin: 5px;
+}
+nav {
+  justify-content: center;
+}
+footer {
+  border-color: aqua;
+}
+.footer-section {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.footer-text {
+  height: 30%;
+  justify-content: center;
+
+}
+.footer-box {
+  border-color: #ef4444;
+}
+.footer-box {
+  display: flex;
+  width: 100%;
+}
+.footer-container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }

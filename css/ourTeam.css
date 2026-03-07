@@ -1,85 +1,73 @@
-.team {
-  color: #10b981;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.bar {
-  height: 5px;
-  flex: auto;
-  background: #18181b;
-  border-radius: 10px;
-}
-section#our-team h1 {
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 15px;
+#our-team .container {
+  flex-direction: column;
+  gap: 40px;
 }
 
-.feature {
-  color: #f97316;
-}
-.subtitle {
-  color: #94a3b8;
-  font-size: 18px;
-  max-width: 500 px;
-  margin: auto;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat (auto-fit);
-  gap: 30px;
-  margin-top: 50px;
-}
-.card {
-  background: #18181b;
-  border-radius: 20px;
-  padding: 40px 25px;
+#our-team .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border: 1px solid #27272a;
+  gap: 18px;
 }
-.card:hover {
-  border-color: #047904;
-  box-shadow: 0 20px #ffffff00;
+
+#our-team .team-grid {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.pfp {
-  width: 80px;
-  height: 80px;
-  background: #022c22;
-  border-radius: 50%;
+
+#our-team .card {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+#our-team .pfp {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  margin-bottom: 15px;
-  color: #10b981;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(var(--color-secondary), 0.05);
+  border-radius: 50%;
+  color: rgb(var(--color-secondary));
   font-size: 20px;
   font-weight: bold;
   border: 2px solid;
 }
-.role {
-  color: #05563c;
+
+#our-team .team-grid .h2 {
+  padding-top: 100px;
+}
+
+#our-team .role {
+  color: rgb(var(--color-secondary));
   font-size: 14px;
   margin: 8px 0;
 }
-.bio {
+
+#our-team .bio {
   color: #a1a1aa;
   font-size: 15px;
   margin-bottom: 20px;
 }
-.socials {
+
+#our-team .social-media {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  color: #cbd5f5;
-  border: 1px solid #ffffff00;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 12px;
+  gap: 25px;
 }
-.social:hover {
-  color: #047904;
-  border-color: #05563c;
+
+#our-team .social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(var(--theme-text), 0.25);
+  border-radius: 99px;
+  padding: 0.5rem;
 }

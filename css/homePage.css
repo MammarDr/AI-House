@@ -1,54 +1,11 @@
-section#home-page {
-}
-
 section#home-page .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
-}
-
-section#home-page h1 {
-  font-size: clamp(1.5rem, calc(10vw + 1rem), 5rem);
-  line-height: 78px;
-}
-
-section#home-page h1 span {
-  background-image: var(--gradient-primary);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 section#home-page .container .introduction {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-}
-
-section#home-page .container .introduction .highlight {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: fit-content;
-  padding: 0.35rem 0.75rem;
-  border-radius: 99px;
-  background-color: rgb(var(--color-secondary), 0.1);
-  backdrop-filter: 100px;
-  border: 1px solid rgb(var(--color-secondary));
-}
-
-section#home-page .container .introduction .highlight span {
-  color: rgb(var(--color-secondary));
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-section#home-page .container .introduction .highlight .dot {
-  width: 8px;
-  height: 8px;
-  background-color: rgb(var(--color-secondary));
-  border-radius: 9999px;
 }
 
 section#home-page .container .introduction .description {
@@ -83,7 +40,6 @@ section#home-page .container .introduction .nav-btns a:nth-child(1):hover {
 
 section#home-page .container .introduction .nav-btns a:nth-child(2) {
   background-color: rgb(var(--theme-background));
-  color: rgb(var(--theme-text));
   border: 2px solid rgb(var(--theme-text), 0.25);
 }
 section#home-page .container .introduction .nav-btns a:nth-child(2):hover {
@@ -128,7 +84,7 @@ section#home-page .image {
   position: relative;
   padding: 2rem;
   background-color: transparent;
-  backdrop-filter: 40px;
+  backdrop-filter: blur(45px);
   border-radius: 60px;
 }
 section#home-page .image .background-bubble {

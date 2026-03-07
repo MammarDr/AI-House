@@ -1,3 +1,144 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2%;
+  width: 100%;
+  background: rgb(var(--theme-background));
+  border-bottom: 1px solid rgb(var(--theme-text), 0.1);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 20%;
+}
+header .logo-icon {
+  display: flex;
+  margin: 2%;
+  justify-content: center;
+}
+header .logo-icon img {
+  width: 2.8rem;
+  height: auto;
+  display: block;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  justify-content: center;
+}
+
+.logo-text h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+.logo-text p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+/*
+header .text-container-header {
+  display: flex;
+  flex-direction: column;
+}
+
+header .text-container-header h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+header .text-container-header p {
+  font-size: 0.75rem;
+  color: rgb(var(--color-secondary));
+  margin: 0;
+  letter-spacing: 1px;
+}
+*/
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(var(--theme-text), 0.75);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a[href="#apply-form"] {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem 1.1rem;
+  border-radius: 1.14rem;
+  font-weight: bold;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+nav a[href="#apply-form"]:hover {
+  background-color: rgb(var(--color-secondary));
+  transform: scale(1.05);
+}
+#theme {
+  background: transparent;
+  border: none;
+  display: flex;
+  color: rgb(var(--theme-text));
+}
+
+#theme .moon-icon {
+  display: block;
+}
+
+#theme .sun-icon {
+  display: none;
+}
+
+body.light-mode #theme .moon-icon {
+  display: none;
+}
+
+body.light-mode #theme .sun-icon {
+  display: block;
+}
+/*
+#theme .moon-icon{
+  display: block;
+}
+
+#theme .sun-icon{
+  display: none;
+}
+
+body.light-mode #theme.dark .moon-icon{
+  display: none;
+}
+
+body.light-mode #theme.dark .sun-icon{
+  display: block;
+}
+
+#theme{
+  background: transparent;
+  border: none;
+  display: flex;
+  color: rgb(--theme-text);
+}*/
 /* header {
   position: fixed;
   top: 0;
