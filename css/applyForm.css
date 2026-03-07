@@ -1,0 +1,282 @@
+section#apply-form .container {
+  flex-direction: column;
+  gap: 6rem;
+}
+
+section#apply-form .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+section#apply-form .content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+section#apply-form .content .stats-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-size: 13px;
+}
+
+section#apply-form .content .stats-section .perks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+
+section#apply-form .content .stats-section .perk {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  background-color: rgb(var(--theme-background));
+  border: 1px solid rgb(var(--theme-text), 0.05);
+  border-radius: 25px;
+  padding: 1.25rem 2rem;
+}
+
+section#apply-form .content .stats-section .perk p {
+  color: rgb(var(--theme-text), 0.6);
+}
+
+section#apply-form .content .stats-section span {
+  display: flex;
+}
+section#apply-form .content .stats-section span svg {
+  fill: rgb(var(--color-secondary));
+}
+
+section#apply-form .content .stats-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+  text-align: start;
+}
+
+section#apply-form .content .stats-section .achievments {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+section#apply-form .content .stats-section .achievment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(var(--theme-text), 0.05);
+  border-radius: 25px;
+  padding: 1.25rem 2rem;
+  gap: 5px;
+  width: 33%;
+}
+section#apply-form .content .stats-section .achievment h2 {
+  color: rgb(var(--color-secondary));
+}
+
+section#apply-form .content .form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 55%;
+  gap: 20px;
+  padding: 2rem;
+  border-radius: 33px;
+  background: rgb(var(--theme-background));
+  border: 1px solid rgb(var(--theme-text), 0.05);
+}
+section#apply-form .content .form-section .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section#apply-form .content .form-section .header .form-title {
+}
+
+section#apply-form .content .form-section .header .tracker {
+  display: flex;
+  gap: 10px;
+}
+section#apply-form .content .form-section .header .bar {
+  padding: 0.25rem 1rem;
+  background-color: rgb(var(--color-secondary), 0.1);
+}
+
+section#apply-form .content .form-section form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+section#apply-form .content .form-section input {
+  width: 100%;
+  padding: 0.75rem 0;
+  padding-left: 1rem;
+  border-radius: 99px;
+  border: 1px solid rgb(var(--color-secondary), 0.1);
+}
+
+section#apply-form .content .form-section input::placeholder {
+  margin-left: 1rem;
+}
+
+section#apply-form .content .form-section button {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 99px;
+  background-color: rgb(var(--color-secondary));
+}
+
+section#apply-form .content .form-section .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+section#apply-form .content .form-section .input-wrapper span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+section#apply-form .content .form-section .double-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* <div class="form-section">
+              <div class="header">
+                <div class="form-title"> */
+
+/* section#apply-form .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+section#apply-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+section#apply-form .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+section#apply-form .perks {
+  background: #060e08;
+  padding: 10px;
+  border: 2px solid;
+  margin-bottom: 15px;
+}
+section#apply-form .perks h2 {
+  margin: 5px;
+}
+section#apply-form .perks p {
+  margin: 0;
+  color: antiquewhite;
+}
+section#apply-form .achiev {
+  background: #060e08;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #060e08;
+}
+section#apply-form .achiev h3 {
+  margin: 0;
+  color: forestgreen;
+}
+section#apply-form .achiev p {
+  font-size: 15px;
+  color: darkgrey;
+}
+
+section#apply-form .apply-section {
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid #060e08;
+}
+
+section#apply-form .apply-section h3 {
+  margin: 5px;
+}
+
+section#apply-form .apply-section p {
+  font-size: 15px;
+  color: ghostwhite;
+}
+
+section#apply-form .tracker {
+  position: absolute;
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+section#apply-form .input-box {
+  margin-bottom: 15px;
+}
+
+section#apply-form input,
+section#apply-form select {
+  background: dimgray;
+  border-radius: 10px;
+  color: aliceblue;
+  border: 1px solid;
+  padding: 10px;
+}
+
+section#apply-form .form-title {
+  margin-bottom: 30px;
+}
+
+section#apply-form .form-title h2 {
+  margin: 0;
+}
+
+section#apply-form .form-title p {
+  color: var(--gray);
+}
+
+section#apply-form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+section#apply-form .apply-section button {
+  background: green;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+section#apply-form .apply-section button:hover {
+  background: green;
+} */
