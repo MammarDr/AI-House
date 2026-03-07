@@ -1,0 +1,66 @@
+section#contact-us .wrap {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+section#contact-us .cont-first {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #ff7d04;
+  text-transform: uppercase;
+}
+section#contact-us .cont-title {
+  font-size: 50px;
+  margin: 24px 0;
+  font-weight: 600;
+}
+section#contact-us .colored {
+  color: #027e02;
+}
+section#contact-us .cont-text {
+  color: bisque;
+  line-height: 1.5;
+  margin-bottom: 35px;
+  font-size: 15px;
+}
+section#contact-us .btns {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+  justify-content: center;
+}
+section#contact-us .join-btn {
+  background: #ff7d04;
+  color: white;
+  border-radius: 15px;
+  padding: 12px 22px;
+  cursor: pointer;
+}
+section#contact-us .email-btn {
+  border: 1px solid rgb(88, 54, 2);
+  border-radius: 10px;
+  color: rgb(241, 238, 238);
+  background: transparent;
+  cursor: pointer;
+  padding: 12px 22px;
+}
+section#contact-us .links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+section#conatact-us .link-btn {
+  border: 1px solid rgb(56, 52, 52);
+  padding: 10ox 18px;
+  color: whitesmoke;
+  border-radius: 10px;
+  font-size: 15px;
+}
+section#contact-us .link-btn:hover {
+  background: rgba(54, 37, 37, 0.064);
+}
+section#contact-us .last-note {
+  font-size: 15px;
+  color: rgb(205, 174, 133);
+}
