@@ -84,10 +84,12 @@ h3 {
 :before,
 button,
 form,
+select,
 input,
 strong,
 p,
-a {
+a,
+li {
   text-decoration: none;
   color: rgb(var(--theme-text));
 }
@@ -136,6 +138,7 @@ section {
   height: 100vh;
   width: 100%;
   scroll-snap-align: start;
+  overflow-y: hidden;
 }
 
 #navigator {
@@ -165,14 +168,13 @@ section {
   display: flex;
   flex-direction: column;
   background: rgb(var(--theme-background));
-  padding: 2rem;
-  border: 1px solid rgb(var(--theme-text), 0.05);
+  border: 2px solid rgb(var(--theme-text), 0.05);
   border-radius: 20px;
 }
 
 .title {
-  font-size: clamp(1.5rem, 5vw + 1rem, 5rem);
-  line-height: 78px;
+  font-size: clamp(3.5rem, 3vw + 1rem, 5rem);
+  line-height: 1;
 }
 
 .tag {
@@ -186,6 +188,7 @@ section {
   border: 1px solid rgb(var(--color-secondary));
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: 900;
 }
 
 .tag span {
@@ -231,20 +234,7 @@ section {
   z-index: 10;
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-}
 
 svg {
   pointer-events: none;
@@ -260,27 +250,81 @@ nav {
 footer {
   border-color: aqua;
 }
-.footer-section {
-  display: flex;
-  width: 100%;
-  height: auto;
-}
-.footer-text {
-  height: 30%;
-  justify-content: center;
 
+@media (max-width: 1260px) {
+ 
 }
-.footer-box {
-  border-color: #ef4444;
+
+@media (max-width: 1028px) {
+  #navigator {
+    display: none;
+  }
+
+  .tag {
+    gap: 5px;
+    padding: 0.35rem 0.5rem;
+    font-size: 10px;
+  }
+
+  .tag .dot {
+    width: 5px;
+    height: 5px;
+  }
 }
-.footer-box {
-  display: flex;
-  width: 100%;
+
+@media (max-width: 642px) {
+  main {
+    width: 100%;
+  }
 }
-.footer-container{
+
+@media (max-height: 1062px) {
+  .title {
+    font-size: clamp(1.8rem, 3vh + 1rem, 5rem);
+  }
+}
+
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+/*.contact-container{
     display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    border: 2px solid rgba(255,255,255,0.2);
+    padding: 40px;
+    border-radius: 12px;
+    width: 70%;
+    margin: auto;
+    background: transparent;
+}
+.text{
+  justify-content: center;
+}*/
+
+
+
+
+
+
+/*.footer-container {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+box-shadow: ;
 }

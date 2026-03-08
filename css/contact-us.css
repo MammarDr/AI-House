@@ -1,4 +1,4 @@
-section#contact-us .wrap {
+/* section#contact-us .wrap {
   text-align: center;
   max-width: 500px;
   margin: auto;
@@ -63,4 +63,77 @@ section#contact-us .link-btn:hover {
 section#contact-us .last-note {
   font-size: 15px;
   color: rgb(205, 174, 133);
+}*/
+.footer-section {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+}
+.footer-text {
+  height: 50%;
+  text-align: center;
+  margin-top: 8%;
+  border-radius: 12px;
+  border-color: antiquewhite;
+}
+.footer-text p {
+  font-style: oblique;
+  color: orangered;
+  text-align: center;
+}
+.footer-text h1 {
+  font-size: 60px;
+  margin-top: 10%;
+}
+.footer-box {
+  border-color: #ef4444;
+  display: flex;
+  gap: 30px;
+}
+.footer-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 40%;
+  gap: 20px;
+}
+.apply-button {
+  margin-top: 20%;
+  border-radius: 8px;
+  background-color: #ef4444;
+  height: 50px;
+  width: 180px;
+  border: 2px solid;
+  border-color: #ef4444;
+}
+.email-button {
+  margin-top: 20%;
+  border-radius: 8px;
+  height: 50px;
+  border: 2px solid;
+  width: 180px;
+  border-color: #ef4444;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 70%;
+  gap: 45px;
+
+  border: 2px solid;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+.social-content a {
+  text-align: center;
+  padding: 4%;
+  border: 2px solid;
+  border-radius: 8px;
 }

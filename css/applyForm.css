@@ -16,6 +16,7 @@ section#apply-form .content {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  gap: 15px;
 }
 
 section#apply-form .content .stats-section {
@@ -25,6 +26,7 @@ section#apply-form .content .stats-section {
   text-align: center;
   gap: 20px;
   font-size: 13px;
+  width: 30%;
 }
 
 section#apply-form .content .stats-section .perks {
@@ -40,7 +42,7 @@ section#apply-form .content .stats-section .perk {
   align-items: center;
   gap: 16px;
   background-color: rgb(var(--theme-background));
-  border: 1px solid rgb(var(--theme-text), 0.05);
+  border: 2px solid rgb(var(--theme-text), 0.05);
   border-radius: 25px;
   padding: 1.25rem 2rem;
 }
@@ -67,7 +69,7 @@ section#apply-form .content .stats-section .achievments {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
+  gap: 5px;
   width: 100%;
 }
 
@@ -80,24 +82,26 @@ section#apply-form .content .stats-section .achievment {
   padding: 1.25rem 2rem;
   gap: 5px;
   width: 33%;
+  background-color: rgb(var(--theme-background));
 }
 section#apply-form .content .stats-section .achievment h2 {
-  color: rgb(var(--color-secondary));
+  color: rgb(var(--theme-text-secondary));
 }
 
 section#apply-form .content .form-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
   width: 55%;
   gap: 20px;
   padding: 2rem;
   border-radius: 33px;
   background: rgb(var(--theme-background));
-  border: 1px solid rgb(var(--theme-text), 0.05);
+  border: 2px solid rgb(var(--theme-text), 0.05);
 }
-section#apply-form .content .form-section .header {
+
+section#apply-form .content .form-section .form-header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -105,16 +109,23 @@ section#apply-form .content .form-section .header {
   width: 100%;
 }
 
-section#apply-form .content .form-section .header .form-title {
+section#apply-form .content .form-section .form-header .form-title p {
+  opacity: 0.7;
+  margin-top: 4px;
 }
 
-section#apply-form .content .form-section .header .tracker {
+section#apply-form .content .form-section .form-header .tracker {
   display: flex;
   gap: 10px;
 }
-section#apply-form .content .form-section .header .bar {
+section#apply-form .content .form-section .form-header .bar {
   padding: 0.25rem 1rem;
+  border-radius: 99px;
   background-color: rgb(var(--color-secondary), 0.1);
+}
+
+section#apply-form .content .form-section .form-header .bar.active {
+  background-color: rgb(var(--color-secondary), 0.8);
 }
 
 section#apply-form .content .form-section form {
@@ -126,14 +137,35 @@ section#apply-form .content .form-section form {
 
 section#apply-form .content .form-section input {
   width: 100%;
-  padding: 0.75rem 0;
+  padding: 1rem 0;
   padding-left: 1rem;
   border-radius: 99px;
-  border: 1px solid rgb(var(--color-secondary), 0.1);
+  border: 1px solid rgb(var(--color-secondary), 0.25);
 }
 
 section#apply-form .content .form-section input::placeholder {
   margin-left: 1rem;
+}
+
+section#apply-form .content .form-section input:focus,
+section#apply-form .content .form-section select:focus {
+  outline: 2px solid rgb(34, 197, 94); /* example green */
+  outline-offset: 2px;
+  border: 1px solid transparent;
+}
+
+section#apply-form .content .form-section select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 1rem;
+  border-radius: 99px;
+  border: 1px solid rgb(var(--color-secondary), 0.25);
+  background-color: transparent;
+  color: rgb(var(--theme-text));
+}
+section#apply-form .content .form-section select option {
+  background-color: rgb(var(--theme-background));
 }
 
 section#apply-form .content .form-section button {
@@ -141,6 +173,13 @@ section#apply-form .content .form-section button {
   padding: 1rem 0;
   border-radius: 99px;
   background-color: rgb(var(--color-secondary));
+  color: #fff;
+  box-shadow: 0 4px 10px rgb(var(--color-secondary), 0.4);
+  cursor: pointer;
+}
+section#apply-form .content .form-section button:hover {
+  background-color: rgb(var(--color-secondary), 0.8);
+  box-shadow: 0 4px 15px rgb(var(--color-secondary), 0.4);
 }
 
 section#apply-form .content .form-section .input-wrapper {
@@ -152,7 +191,9 @@ section#apply-form .content .form-section .input-wrapper span {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-weight: 500;
   margin-bottom: 10px;
+  margin-left: 5px;
 }
 
 section#apply-form .content .form-section .double-input-wrapper {
@@ -162,121 +203,50 @@ section#apply-form .content .form-section .double-input-wrapper {
   margin-bottom: 10px;
 }
 
-/* <div class="form-section">
-              <div class="header">
-                <div class="form-title"> */
+@media (max-width: 1028px) {
+  section#apply-form .content .stats-section .perks {
+    display: none;
+  }
 
-/* section#apply-form .stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-}
+  section#apply-form .container {
+    gap: 2rem;
+  }
 
-section#apply-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 15px;
-}
+  section#apply-form .content {
+    flex-direction: column;
+  }
 
-section#apply-form .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-section#apply-form .perks {
-  background: #060e08;
-  padding: 10px;
-  border: 2px solid;
-  margin-bottom: 15px;
-}
-section#apply-form .perks h2 {
-  margin: 5px;
-}
-section#apply-form .perks p {
-  margin: 0;
-  color: antiquewhite;
-}
-section#apply-form .achiev {
-  background: #060e08;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  border: 1px solid #060e08;
-}
-section#apply-form .achiev h3 {
-  margin: 0;
-  color: forestgreen;
-}
-section#apply-form .achiev p {
-  font-size: 15px;
-  color: darkgrey;
+  section#apply-form .content .stats-section,
+  section#apply-form .content .form-section {
+    width: 100%;
+  }
 }
 
-section#apply-form .apply-section {
-  padding: 25px;
-  border-radius: 20px;
-  border: 1px solid #060e08;
-}
+@media (max-width: 642px) {
+  section#apply-form .content .form-section .form-header .form-title {
+    display: none;
+  }
 
-section#apply-form .apply-section h3 {
-  margin: 5px;
+  section#apply-form .content .form-section .form-header .tracker {
+    margin-left: auto;
+  }
 }
+@media (max-height: 814px) {
+  section#apply-form .content .form-section .form-header .form-title,
+  section#apply-form .content .stats-section .achievments,
+  section#apply-form .header .tag {
+    display: none;
+  }
 
-section#apply-form .apply-section p {
-  font-size: 15px;
-  color: ghostwhite;
+  section#apply-form .content .form-section .form-header .tracker {
+    margin-left: auto;
+  }
+
+  section#apply-form .container {
+    gap: 2rem;
+  }
+
+  section#apply-form .content .stats-section .perks {
+    margin: auto;
+  }
 }
-
-section#apply-form .tracker {
-  position: absolute;
-  display: flex;
-  margin-bottom: 20px;
-  gap: 10px;
-}
-
-section#apply-form .input-box {
-  margin-bottom: 15px;
-}
-
-section#apply-form input,
-section#apply-form select {
-  background: dimgray;
-  border-radius: 10px;
-  color: aliceblue;
-  border: 1px solid;
-  padding: 10px;
-}
-
-section#apply-form .form-title {
-  margin-bottom: 30px;
-}
-
-section#apply-form .form-title h2 {
-  margin: 0;
-}
-
-section#apply-form .form-title p {
-  color: var(--gray);
-}
-
-section#apply-form .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-section#apply-form .apply-section button {
-  background: green;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-  border-radius: 15px;
-}
-
-section#apply-form .apply-section button:hover {
-  background: green;
-} */

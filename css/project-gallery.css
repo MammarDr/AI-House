@@ -1,0 +1,133 @@
+#projects-gallery .container {
+  flex-direction: column;
+  gap: 26px;
+}
+#projects-gallery .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+#projects-gallery .filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 18px;
+  text-align: center;
+  margin: auto;
+}
+
+#projects-gallery .filters span {
+  font-size: 13px;
+  font-weight: 600;
+  background-color: rgb(var(--theme-background));
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(var(--theme-text), 0.1);
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+#projects-gallery .filters span:hover {
+  background-color: rgb(var(--theme-text), 0.1);
+}
+
+#projects-gallery .filters span.active {
+  background-color: rgb(var(--color-primary));
+}
+
+#projects-gallery .filters span.active:hover {
+  background-color: rgb(var(--color-primary));
+  color: #fff;
+}
+
+#projects-gallery .projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 280px;
+  gap: 10px;
+  width: 100%;
+}
+#projects-gallery .projects .project {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgb(var(--theme-text), 0.1);
+  cursor: pointer;
+}
+
+#projects-gallery .projects .project img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#projects-gallery .projects .project img:hover {
+  scale: 1.1;
+}
+
+#projects-gallery .projects .project > div {
+  position: absolute;
+}
+
+#projects-gallery .projects .project .tags {
+  display: flex;
+  gap: 8px;
+  padding: 0.5rem;
+}
+
+#projects-gallery .projects .project .description {
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(0 0 0 / 61%) 0px -115px 36px -28px inset;
+  pointer-events: none;
+}
+
+#projects-gallery .projects .project .description h2 {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+#projects-gallery .projects .project .description p {
+  font-size: 14px;
+  color: #fff;
+}
+
+#projects-gallery .projects .project .description span {
+  color: #fff;
+}
+
+#projects-gallery .projects .project .description .tags {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#projects-gallery .projects .project .description .tags span {
+  margin-right: 5px;
+  background-color: rgba(255, 242, 222, 0.149);
+  padding: 0.25rem 0.5rem;
+  border-radius: 99px;
+}
+
+#projects-gallery .projects .project .toggle-details {
+  display: none;
+  right: 10px;
+  top: 10px;
+  border-radius: 15px;
+  padding: 0.35rem;
+  background-color: rgb(var(--color-primary));
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#projects-gallery .projects .project:hover .toggle-details {
+  display: flex;
+}

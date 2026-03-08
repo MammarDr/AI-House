@@ -1,784 +1,964 @@
 <!doctype html>
 <html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI HOUSE - UHCB</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="css/homePage.css" />
-    <link rel="stylesheet" href="css/bot.css" />
-    <link rel="stylesheet" href="css/ourTeam.css" />
-    <link rel="stylesheet" href="css/applyForm.css" />
-    <link rel="stylesheet" href="css/contact-us.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=smart_toy"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <div class="logo-icon">
-          <img
-            src="/assets/images/brain-logo.png"
-            alt="brain-logo"
-            style="width: 70px; height: auto"
-          />
-         <div class="logo-text">
-        <h1>AI HOUSE</h1>
-        <p>UHBC CHLEF</p>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AI HOUSE - UHCB</title>
+      <link rel="stylesheet" href="main.css" />
+      <link rel="stylesheet" href="css/homePage.css" />
+      <link rel="stylesheet" href="css/bot.css" />
+      <link rel="stylesheet" href="css/project-card.css" />
+      <link rel="stylesheet" href="css/ourTeam.css" />
+      <link rel="stylesheet" href="css/applyForm.css" />
+      <link rel="stylesheet" href="css/project-gallery.css" />
+      <link rel="stylesheet" href="css/contact-us.css" />
+      <link rel="stylesheet" href="css/events.css" />
+      <link rel="stylesheet" href="css/header.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=smart_toy"
+         />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+         rel="stylesheet"
+         />
+   </head>
+   <body>
+      <header>
+         <div class="logo">
+            <div class="logo-icon">
+               <img
+                  src="/assets/images/brain-logo.png"
+                  alt="brain-logo"
+                  style="width: 70px; height: auto"
+                  />
+               <div class="logo-text">
+                  <h1>AI HOUSE</h1>
+                  <p>UHBC CHLEF</p>
+               </div>
+            </div>
+         </div>
+         <nav>
+            <a href="#home-page">Home</a>
+            <a href="#projects-gallery">Projects</a>
+            <a href="#events">Agenda</a>
+            <a href="#our-team">Members</a>
+            <a href="#apply-form">Join Us</a>
+            <button id="theme">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#1f1f1f"
+                  >
+                  <path
+                     d="M565-395q35-35 35-85t-35-85q-35-35-85-35t-85 35q-35 35-35 85t35 85q35 35 85 35t85-35Zm-226.5 56.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+                     />
+               </svg>
+            </button>
+         </nav>
+      </header>
+      <div id="navigator">
+         <a href="#home-page" class="checked"></a>
+         <a href="#project-card" ></a>
+         <a href="#projects-gallery"></a>
+         <a href="#events"></a>
+         <a href="#our-team"></a>
+         <a href="#apply-form"></a>
+         <a href="#footer"></a>
       </div>
-        </div>
-      </div> 
-      <nav>
-        <a href="#home-page">Home</a>
-        <a href="#projects-gallery">Projects</a>
-        <a href="#events">Agenda</a>
-        <a href="#our-team">Members</a>
-        <a href="#apply-form">Join Us</a>
-        <button id="theme">
-          <svg
+      <main class="snap-container">
+         <section id="home-page" class="snap-section">
+            <div class="container">
+               <div class="introduction">
+                  <div class="tag">
+                     <span class="dot"></span>
+                     <span>innovation hub at uhbc</span>
+                  </div>
+                  <h1 class="title tighter-text">
+                     Shaping the<br /><span class="highlight">Future of AI</span
+                        ><br />in Algeria
+                  </h1>
+                  <p class="description">
+                     Maison de l'IA is the epicenter of artificial intelligence
+                     research, learning, and innovation at Université Hassiba Benbouali
+                     de Chlef. Join a community of visionaries.
+                  </p>
+                  <div class="nav-btns">
+                     <a id="explore-btn" href="#projects-gallery">
+                        Explore Projects
+                        <svg
+                           viewBox="0 0 448 512"
+                           width="16px"
+                           height="16px"
+                           class="theme"
+                           >
+                           <path
+                              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                              ></path>
+                        </svg>
+                     </a>
+                     <a id="impact-btn" href="#events">
+                        <svg viewBox="0 0 576 512" width="20px" height="20px">
+                           <path
+                              fill="rgb(0, 168, 89)"
+                              d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"
+                              ></path>
+                        </svg>
+                        View Impact
+                     </a>
+                  </div>
+                  <div class="reputation">
+                     <p>Supported by Academic Leaders</p>
+                     <div>
+                        <div>
+                           <img
+                              src="assets/images/ui/info-brain.png"
+                              alt="Infobrain Logo"
+                              width="22"
+                              height="22"
+                              />
+                           <span>InfoBrains</span>
+                        </div>
+                        <div>
+                           <img
+                              src="assets/images/ui/uhbc.png"
+                              alt="Hassiba Ben Bouali University"
+                              width="26"
+                              height="26"
+                              />
+                           <span>UHBC</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image animate-float">
+                  <div class="background-bubble"></div>
+                  <img
+                     src="./assets/images/ui/brain.png"
+                     />
+               </div>
+            </div>
+         </section>
+         <section id="project-card" class="snap-section">
+            <div class="container">
+               <div class="card-header">
+                  <img src="/assets//images/projects/ai-chat-bot.jpg" alt="Smart Vision Preview" class="card-img">
+                  <span class="category-badge">Computer Vision</span>
+                  <button class="close-icon" aria-label="Close">&times;</button>
+               </div>
+               <div class="card-body">
+                  <h2 class="card-title">Smart Vision Detection</h2>
+                  <p class="card-description">
+                     Leveraging YOLOv8 and custom-trained models,this system achieves 97.3% accuracy in detecting menufacturing defects. Deployed 
+                     in partnership with a local factory in Chlef for pilot testing.
+                  </p>
+                  <div class="card-meta">
+                     <span class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <svg 
+                           xmlns="http://www.w3.org/2000/svg" 
+                           height="18px" 
+                           viewBox="0 -960 960 960" 
+                           width="18px" >
+                           <path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"/>
+                        </svg>
+                        3 members
+                     </span>
+                     <span class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <svg 
+                           xmlns="http://www.w3.org/2000/svg"
+                           height="18px"
+                           viewBox="0 -960 960 960" 
+                           width="18px" >
+                           <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-188.5-11.5Q280-423 280-440t11.5-28.5Q303-480 320-480t28.5 11.5Q360-457 360-440t-11.5 28.5Q337-400 320-400t-28.5-11.5ZM640-400q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-188.5-11.5Q280-263 280-280t11.5-28.5Q303-320 320-320t28.5 11.5Q360-297 360-280t-11.5 28.5Q337-240 320-240t-28.5-11.5ZM640-240q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
+                        </svg>
+                        Nov 2025
+                     </span>
+                  </div>
+                  <div class="card-tags">
+                     <span class="tag-outline">
+                        <i class="fab fa-python"></i>
+                        <svg 
+                           xmlns="http://www.w3.org/2000/svg" 
+                           height="16px" 
+                           viewBox="0 -960 960 960" 
+                           width="16px">
+                           <path d="M446-80q-15 0-30-6t-27-18L103-390q-12-12-17.5-26.5T80-446q0-15 5.5-30t17.5-27l352-353q11-11 26-17.5t31-6.5h287q33 0 56.5 23.5T879-800v287q0 16-6 30.5T856-457L503-104q-12 12-27 18t-30 6Zm0-80 353-354v-286H513L160-446l286 286Zm253-480q25 0 42.5-17.5T759-700q0-25-17.5-42.5T699-760q-25 0-42.5 17.5T639-700q0 25 17.5 42.5T699-640ZM480-480Z"/>
+                        </svg>
+                        PyTorch
+                     </span>
+                     <span class="tag-outline">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg" 
+                           height="16px" 
+                           viewBox="0 -960 960 960" 
+                           width="16px" >
+                           <path d="M446-80q-15 0-30-6t-27-18L103-390q-12-12-17.5-26.5T80-446q0-15 5.5-30t17.5-27l352-353q11-11 26-17.5t31-6.5h287q33 0 56.5 23.5T879-800v287q0 16-6 30.5T856-457L503-104q-12 12-27 18t-30 6Zm0-80 353-354v-286H513L160-446l286 286Zm253-480q25 0 42.5-17.5T759-700q0-25-17.5-42.5T699-760q-25 0-42.5 17.5T639-700q0 25 17.5 42.5T699-640ZM480-480Z"/>
+                        </svg>
+                        YOLOv8
+                     </span>
+                     <span class="tag-outline">
+                        <svg 
+                           xmlns="http://www.w3.org/2000/svg" 
+                           height="16px" 
+                           viewBox="0 -960 960 960"
+                           width="16px" >
+                           <path d="M446-80q-15 0-30-6t-27-18L103-390q-12-12-17.5-26.5T80-446q0-15 5.5-30t17.5-27l352-353q11-11 26-17.5t31-6.5h287q33 0 56.5 23.5T879-800v287q0 16-6 30.5T856-457L503-104q-12 12-27 18t-30 6Zm0-80 353-354v-286H513L160-446l286 286Zm253-480q25 0 42.5-17.5T759-700q0-25-17.5-42.5T699-760q-25 0-42.5 17.5T639-700q0 25 17.5 42.5T699-640ZM480-480Z"/>
+                        </svg>
+                        OpenCV
+                     </span>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#" class="btn-primary">
+                        View Full Project
+                        <svg 
+                              xmlns="http://www.w3.org/2000/svg" 
+                              height="16px" 
+                              viewBox="0 -960 960 960" 
+                              width="16px" >
+                              <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/>
+                           </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="projects-gallery" class="snap-section">
+            <div class="container">
+            <div class="header">
+               <div class="tag">
+                  <span class="dot"></span>
+                  <span>OUR PROJECTS</span>
+               </div>
+               <h1 class="title"> Innovations built at <br><span class="highlight">AI House</span> </h1>
+               <p class="subs">
+                  Explore the innovative projects built by AI House members, from NLP to robotics and beyond.
+               </p>
+            </div>
+            <div class="filters">
+               <span class="active"> ALL PROJECTS</span>
+               <span>NLP</span>
+               <span>Computer Vision</span>
+               <span>Generative AI</span>
+               <span>Robotics</span>
+            </div>
+            <div class="projects">
+            <div class="project" style="grid-column: span 2 / span 2;">
+               <img src="/assets/images/projects/ai-chat-bot.jpg" alt="ai assistant">
+               <div class="tags">
+                  <div class="tag">
+                     <span>NLP</span>
+                  </div>
+                  <div class="tag">
+                     <span>LLM</span>
+                  </div>
+               </div>
+               <div class="description">
+                  <h2>AI Chatbot Assistant</h2>
+                  <p>A conversional AI system built for campus-wide student support and FAQ automation.</p>
+                  <div class="tags">
+                     <span>Python</span>
+                     <span>Transfomers</span>
+                  </div>
+               </div>
+               <div class="toggle-details">
+                  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" width="18" height="18" >
+                     <path fill="#FFF" d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/>
+                  </svg>
+               </div>
+            </div>
+            <div class="project">
+               <img src="/assets/images/projects/ai-monitor.jpg" alt="ai assistant" >
+               <div class="tags">
+                  <div class="tag">
+                     <span>NLP</span>
+                  </div>
+               </div>
+               <div class="description">
+                  <h2>AI Chatbot Assistant</h2>
+                  <p>A conversional AI system built for campus-wide student support and FAQ automation.</p>
+                  <div class="tags">
+                     <span>Python</span>
+                     <span>Transfomers</span>
+                  </div>
+               </div>
+               <div class="toggle-details">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="18" height="18">
+                     <path fill="#FFF" d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/>
+                  </svg>
+               </div>
+            </div>
+            <div class="project">
+               <img src="/assets/images/projects/computer-detection.jpg" alt="ai assistant" >
+               <div class="tags">
+                  <div class="tag">
+                     <span>NLP</span>
+                  </div>
+               </div>
+               <div class="description">
+                  <h2>AI Chatbot Assistant</h2>
+                  <p>A conversional AI system built for campus-wide student support and FAQ automation.</p>
+                  <div class="tags">
+                     <span>Python</span>
+                     <span>Transfomers</span>
+                  </div>
+               </div>
+               <div class="toggle-details">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="18" height="18">
+                     <path fill="#FFF" d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/>
+                  </svg>
+               </div>
+            </div>
+            <div class="project" style="grid-column: span 2 / span 2;">
+               <img src="/assets/images/projects/ai-robotic.jpg" alt="ai assistant" >
+               <div class="tags">
+                  <div class="tag">
+                     <span>NLP</span>
+                  </div>
+               </div>
+               <div class="description">
+                  <h2>AI Chatbot Assistant</h2>
+                  <p>A conversional AI system built for campus-wide student support and FAQ automation.</p>
+                  <div class="tags">
+                     <span>Python</span>
+                     <span>Transfomers</span>
+                  </div>
+               </div>
+               <div class="toggle-details">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="18" height="18">
+                     <path fill="#FFF" d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/>
+                  </svg>
+               </div>
+            </div>
+         </section>
+         <section id="events" class="snap-section">
+            <div class="header">
+               <div class="tag">
+                  <span class="dot"></span>
+                  <span>EVENTS & ACTIVITIES</span>
+               </div>
+               <h1 class="title">Upcoming <span class="highlight">events</span></h1>
+               <p class="description">Stay tuned for workshops, hackathons, and guest lectures at AI House.</p>
+            </div>
+            <div class="cards-grid">
+               <div class="card">
+                  <div class="image-box ">
+                     <img src="/assets/images/events/bussiness-man.jpg" alt="" >
+                     <span class="badge orange">Upcoming</span>
+                  </div>
+                  <div class="card-content">
+                     <h3>AI Hackathon 2026</h3>
+                     <p>48-hour challenge to build innovative AI solutions for real Algerian problems. Teams of 2-5 students compete for prizes and mentorship opportunities.</p>
+                     <ul class="details">
+                        <li>
+                           <svg 
+                              xmlns="http://www.w3.org/2000/svg" 
+                              height="24px"
+                              viewBox="0 -960 960 960"
+                              width="16px" 
+                              fill="#1f1f1f">
+                              <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-188.5-11.5Q280-423 280-440t11.5-28.5Q303-480 320-480t28.5 11.5Q360-457 360-440t-11.5 28.5Q337-400 320-400t-28.5-11.5ZM640-400q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-188.5-11.5Q280-263 280-280t11.5-28.5Q303-320 320-320t28.5 11.5Q360-297 360-280t-11.5 28.5Q337-240 320-240t-28.5-11.5ZM640-240q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
+                           </svg>
+                           Apr 15-17, 2026
+                        </li>
+                        <li>
+                           <svg 
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24px" 
+                              viewBox="0 -960 960 960" 
+                              width="16px" 
+                              fill="#1f1f1f">
+                              <path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/>
+                           </svg>
+                           Starts 9:00 AM
+                        </li>
+                        <li>
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg" 
+                              height="24px"
+                              viewBox="0 -960 960 960" 
+                              width="16px"
+                              fill="#1f1f1f">
+                              <path d="M440-400h80v-120h120v-80H520v-120h-80v120H320v80h120v120Zm40 214q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+                           </svg>
+                           UHBC Main Auditorium
+                        </li>
+                     </ul>
+                     <a href="#" class="learn-more">Learn More &rarr;</a>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="image-box ">
+                     <img src="/assets/images/events/ai-learning.png" alt="" >
+                     <span class="badge orange">Upcoming</span>
+                  </div>
+                  <div class="card-content">
+                     <h3>Deep Learning Workshop Series</h3>
+                     <p>A 4-week intensive workshop covering CNNs, RNNs, GANs, and Transformers with practical projects using PyTorch and TensorFlow.</p>
+                     <ul class="details">
+                        <li>
+                           <svg 
+                              xmlns="http://www.w3.org/2000/svg" 
+                              height="24px"
+                              viewBox="0 -960 960 960"
+                              width="16px" 
+                              fill="#1f1f1f">
+                              <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-188.5-11.5Q280-423 280-440t11.5-28.5Q303-480 320-480t28.5 11.5Q360-457 360-440t-11.5 28.5Q337-400 320-400t-28.5-11.5ZM640-400q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-188.5-11.5Q280-263 280-280t11.5-28.5Q303-320 320-320t28.5 11.5Q360-297 360-280t-11.5 28.5Q337-240 320-240t-28.5-11.5ZM640-240q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
+                           </svg>
+                           May 5 - May 30, 2026
+                        </li>
+                        <li>
+                           <svg 
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24px" 
+                              viewBox="0 -960 960 960" 
+                              width="16px" 
+                              fill="#1f1f1f">
+                              <path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/>
+                           </svg>
+                           Every Saturday, 2:00 PM
+                        </li>
+                        <li>
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg" 
+                              height="24px"
+                              viewBox="0 -960 960 960" 
+                              width="16px"
+                              fill="#1f1f1f">
+                              <path d="M440-400h80v-120h120v-80H520v-120h-80v120H320v80h120v120Zm40 214q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+                           </svg>
+                           AI Lab, Building C
+                        </li>
+                     </ul>
+                     <a href="#" class="learn-more">Learn More &rarr;</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="our-team" class="snap-section">
+            <div class="container">
+               <div class="header">
+                  <div class="tag">
+                     <span class="dot"></span>
+                     <span>OUR TEAM</span>
+                  </div>
+                  <h1 class="title">
+                     Meet The<br /><span class="highlight">People</span><br />Behind AI
+                     House
+                  </h1>
+                  <p class="subtitle">
+                     Dedicated faculty and student leaders driving AI innovation at
+                     UHBC.
+                  </p>
+               </div>
+               <div class="team-grid">
+                  <div class="card">
+                     <div class="pfp">MD</div>
+                     <div>
+                        <h2>Darmech Mammar</h2>
+                        <p class="role">Technical Lead</p>
+                     </div>
+                     <p class="bio">
+                        Associate Professor of Computer Science, specializing in deep
+                        learning and NLP.
+                     </p>
+                     <div class="social-media">
+                        <a href="#">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="black"
+                              >
+                              <path
+                                 d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
+                                 />
+                           </svg>
+                        </a>
+                        <a href="#">
+                           <svg width="14" height="14" viewBox="0 0 20 20" version="1.1">
+                              <g
+                                 id="Page-1"
+                                 stroke="none"
+                                 stroke-width="1"
+                                 fill-rule="evenodd"
+                                 >
+                                 <g
+                                    id="Dribbble-Light-Preview"
+                                    transform="translate(-180.000000, -7479.000000)"
+                                    >
+                                    <g
+                                       id="icons"
+                                       transform="translate(56.000000, 160.000000)"
+                                       >
+                                       <path
+                                          d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                                          id="linkedin-[#161]"
+                                          ></path>
+                                    </g>
+                                 </g>
+                              </g>
+                           </svg>
+                        </a>
+                        <a href="#">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="16"
+                              height="16"
+                              >
+                              <path
+                                 d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.022 4.388 11.022 10.125 11.927v-8.438H7.078V12.07h3.047V9.412c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.953.925-1.953 1.874v2.265h3.328l-.532 3.492h-2.796v8.438C19.612 23.095 24 18.095 24 12.073z"
+                                 />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="pfp">ND</div>
+                     <div>
+                        <h2>Dendane Nesrine</h2>
+                        <p class="role">Club President</p>
+                     </div>
+                     <p class="bio">
+                        Master's student in AI, passionate about making AI education
+                        accessible in Algeria.
+                     </p>
+                     <div class="social-media">
+                        <a href="#">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="black"
+                              >
+                              <path
+                                 d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
+                                 />
+                           </svg>
+                        </a>
+                        <a href="#">
+                           <svg width="14" height="14" viewBox="0 0 20 20" version="1.1">
+                              <g
+                                 id="Page-1"
+                                 stroke="none"
+                                 stroke-width="1"
+                                 fill-rule="evenodd"
+                                 >
+                                 <g
+                                    id="Dribbble-Light-Preview"
+                                    transform="translate(-180.000000, -7479.000000)"
+                                    >
+                                    <g
+                                       id="icons"
+                                       transform="translate(56.000000, 160.000000)"
+                                       >
+                                       <path
+                                          d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                                          id="linkedin-[#161]"
+                                          ></path>
+                                    </g>
+                                 </g>
+                              </g>
+                           </svg>
+                        </a>
+                        <a href="#">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="16"
+                              height="16"
+                              >
+                              <path
+                                 d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.022 4.388 11.022 10.125 11.927v-8.438H7.078V12.07h3.047V9.412c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.953.925-1.953 1.874v2.265h3.328l-.532 3.492h-2.796v8.438C19.612 23.095 24 18.095 24 12.073z"
+                                 />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="pfp">SG</div>
+                     <div>
+                        <h2>Ghazali Souad</h2>
+                        <p class="role">Workshops Coordinator</p>
+                     </div>
+                     <p class="bio">
+                        Mathematics student organizing weekly coding sessions and
+                        bootcamps.
+                     </p>
+                     <div class="social-media">
+                        <a href="#">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="black"
+                              >
+                              <path
+                                 d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
+                                 />
+                           </svg>
+                        </a>
+                        <a href="#">
+                           <svg width="14" height="14" viewBox="0 0 20 20" version="1.1">
+                              <g
+                                 id="Page-1"
+                                 stroke="none"
+                                 stroke-width="1"
+                                 fill-rule="evenodd"
+                                 >
+                                 <g
+                                    id="Dribbble-Light-Preview"
+                                    transform="translate(-180.000000, -7479.000000)"
+                                    >
+                                    <g
+                                       id="icons"
+                                       transform="translate(56.000000, 160.000000)"
+                                       >
+                                       <path
+                                          d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                                          id="linkedin-[#161]"
+                                          ></path>
+                                    </g>
+                                 </g>
+                              </g>
+                           </svg>
+                        </a>
+                        <a href="#">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="16"
+                              height="16"
+                              >
+                              <path
+                                 d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.022 4.388 11.022 10.125 11.927v-8.438H7.078V12.07h3.047V9.412c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.953.925-1.953 1.874v2.265h3.328l-.532 3.492h-2.796v8.438C19.612 23.095 24 18.095 24 12.073z"
+                                 />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="pfp">MM</div>
+                     <div>
+                        <h2>Manar</h2>
+                        <p class="role">Faculty Advisor</p>
+                     </div>
+                     <p class="bio">
+                        CS senior leading the robotics and computer vision projects at
+                        AI House.
+                     </p>
+                     <div class="social-media">
+                        <a href="#">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              >
+                              <path
+                                 d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
+                                 />
+                           </svg>
+                        </a>
+                        <a href="#">
+                           <svg width="14" height="14" viewBox="0 0 20 20" version="1.1">
+                              <g
+                                 id="Page-1"
+                                 stroke="none"
+                                 stroke-width="1"
+                                 fill-rule="evenodd"
+                                 >
+                                 <g
+                                    id="Dribbble-Light-Preview"
+                                    transform="translate(-180.000000, -7479.000000)"
+                                    >
+                                    <g
+                                       id="icons"
+                                       transform="translate(56.000000, 160.000000)"
+                                       >
+                                       <path
+                                          d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                                          id="linkedin-[#161]"
+                                          ></path>
+                                    </g>
+                                 </g>
+                              </g>
+                           </svg>
+                        </a>
+                        <a href="#">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="16"
+                              height="16"
+                              >
+                              <path
+                                 d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.022 4.388 11.022 10.125 11.927v-8.438H7.078V12.07h3.047V9.412c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.953.925-1.953 1.874v2.265h3.328l-.532 3.492h-2.796v8.438C19.612 23.095 24 18.095 24 12.073z"
+                                 />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="apply-form" class="snap-section">
+            <div class="container">
+               <div class="header">
+                  <div class="tag">
+                     <span class="dot"></span>
+                     <span> JOIN AI HOUSE</span>
+                  </div>
+                  <h1 class="title">
+                     Apply to be part of the
+                     <span class="highlight"> innovation </span>
+                  </h1>
+                  <p>
+                     Whether you're passionate about AI, machine learning, or robotics
+                     — we welcome students from all backgrounds.
+                  </p>
+               </div>
+               <div class="content">
+                  <div class="stats-section">
+                     <div class="perks">
+                        <div class="perk">
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                                 <path d="M852-212 732-332l56-56 120 120-56 56ZM708-692l-56-56 120-120 56 56-120 120Zm-456 0L132-812l56-56 120 120-56 56ZM108-212l-56-56 120-120 56 56-120 120Zm246-75 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-361Z"/>
+                              </svg>
+                           </span>
+                           <div>
+                              <h3>AI Workshops & Bootcamps</h3>
+                              <p>Weekly hands-on sessions</p>
+                           </div>
+                        </div>
+                        <div class="perk">
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" >
+                                 <path fill="orange" d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"/>
+                              </svg>
+                           </span>
+                           <div>
+                              <h3>Research Mentorship</h3>
+                              <p>Guided by UHBC faculty</p>
+                           </div>
+                        </div>
+                        <div class="perk">
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                                 <path fill="green" d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Zm-80 40h560L520-492v-268h-80v268L200-200Zm280-280Z"/>
+                              </svg>
+                           </span>
+                           <div>
+                              <h3>Real Project Experience</h3>
+                              <p>Build your portfolio</p>
+                           </div>
+                        </div>
+                        <div class="perk">
+                           <span>
+                              <svg viewBox="0 -960 960 960" height="24px"  width="24px" >
+                                 <path fill="orange" d="M240-40H120q-33 0-56.5-23.5T40-120v-120h80v120h120v80Zm480 0v-80h120v-120h80v120q0 33-23.5 56.5T840-40H720ZM480-220q-120 0-217.5-71T120-480q45-118 142.5-189T480-740q120 0 217.5 71T840-480q-45 118-142.5 189T480-220Zm0-80q88 0 161-48t112-132q-39-84-112-132t-161-48q-88 0-161 48T207-480q39 84 112 132t161 48Zm0-40q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm0-80q-25 0-42.5-17.5T420-480q0-25 17.5-42.5T480-540q25 0 42.5 17.5T540-480q0 25-17.5 42.5T480-420ZM40-720v-120q0-33 23.5-56.5T120-920h120v80H120v120H40Zm800 0v-120H720v-80h120q33 0 56.5 23.5T920-840v120h-80ZM480-480Z"/>
+                              </svg>
+                           </span>
+                           <div>
+                              <h2>AI Community Access</h2>
+                              <p>Network with professionals</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="achievments">
+                        <div class="achievment">
+                           <h2>50+</h2>
+                           <p>Memebers</p>
+                        </div>
+                        <div class="achievment">
+                           <h2>12</h2>
+                           <p>Projects</p>
+                        </div>
+                        <div class="achievment">
+                           <h2>8</h2>
+                           <p>Workshops</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-section">
+                     <div class="form-header">
+                        <div class="form-title">
+                           <h2>Application Form</h2>
+                           <p>Fill in your details to apply</p>
+                        </div>
+                        <div class="tracker">
+                           <div id="dot_1" class="bar"></div>
+                           <div id="dot_2" class="bar"></div>
+                           <div id="dot_3" class="bar"></div>
+                           <div id="dot_4" class="bar"></div>
+                        </div>
+                     </div>
+                     <form autocomplete="off">
+                        <div class="input-wrapper">
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#FFFFFF">
+                                 <path d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm296.5-343.5Q560-607 560-640t-23.5-56.5Q513-720 480-720t-56.5 23.5Q400-673 400-640t23.5 56.5Q447-560 480-560t56.5-23.5ZM480-640Zm0 400Z"/>
+                              </svg>
+                              <label>Full Name</label>
+                           </span>
+                           <input id="name" name="name" type="text" placeholder="Enter your full name" autocomplete="off" />
+                        </div>
+                        <div class="input-wrapper">
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#FFFFFF">
+                                 <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
+                              </svg>
+                              <label>Email Address</label>
+                           </span>
+                           <input
+                              id="email"
+                              name="email"
+                              type="email"
+                              placeholder="youremail@univ-chlef.dz"
+                              autocomplete="off"
+                              />
+                        </div>
+                        <div class="double-input-wrapper">
+                           <div class="input-wrapper">
+                              <span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#FFFFFF">
+                                    <path d="m240-160 40-160H120l20-80h160l40-160H180l20-80h160l40-160h80l-40 160h160l40-160h80l-40 160h160l-20 80H660l-40 160h160l-20 80H600l-40 160h-80l40-160H360l-40 160h-80Zm140-240h160l40-160H420l-40 160Z"/>
+                                 </svg>
+                                 <label> Student ID </label>
+                              </span>
+                              <input id="studentid" name="id" type="text" placeholder="ex.2026322708" autocomplete="off" />
+                           </div>
+                           <div class="input-wrapper">
+                              <span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#FFFFFF">
+                                    <path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"/>
+                                 </svg>
+                                 <label> Department Of </label>
+                              </span>
+                              <select id="department" name="dept">
+                                 <option values="">Select</option>
+                                 <option>Computer Science</option>
+                                 <option>Mathematics</option>
+                                 <option>Electronics</option>
+                                 <option>Chemistry</option>
+                                 <option>Physics</option>
+                                 <option>Other</option>
+                              </select>
+                           </div>
+                        </div>
+                        <button type="submit">Submit Application</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="footer" class="snap-section">
+            <div id="footer-c" class="footer-section">
+               <div class="footer-container">
+                  <div  class="text">
+                     <p>GET IN TOUCH</p>
+                     <br> <br>
+                     <h1 class="title highlight">Contact Us</h1>
+                     <br><br><br>
+                  </div>
+                  <p>
+                     Partenaires, chercheurs, étudiants — la Maison de l'IA UHBC est <br>
+                     votre espace d'innovation et d'excellence académique.
+                  </p>
+                  <div class="footer-box">
+                     <button class="apply-button">
+                     Apply Now
+                     </button>
+                     <button class="email-button">
+                     aihouse@univ-chlef.dz
+                     </button>
+                  </div>
+                  <div class="social-content">
+                     <a href="">Facebook</a>
+                     <a href="">Instagram</a>
+                     <a href="">GitHub</a>
+                  </div>
+                  <br><br>
+               </div>
+            </div>
+         </section>
+      </main>
+      <div id="chat-bot">
+         <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
             viewBox="0 -960 960 960"
             width="24px"
-            fill="#1f1f1f"
-          >
+            >
             <path
-              d="M565-395q35-35 35-85t-35-85q-35-35-85-35t-85 35q-35 35-35 85t35 85q35 35 85 35t85-35Zm-226.5 56.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#1f1f1f"
-          >
-            <path
-              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
-            />
-          </svg>
-        </button>
-      </nav>
-    </header>
-    <div id="navigator">
-      <a href="#home-page" class="checked"></a>
-      <a href="#projects-gallery"></a>
-      <a href="#events"></a>
-      <a href="#our-team"></a>
-      <a href="#apply-form"></a>
-      <a href="#footer"></a>
-    </div>
-    <main class="snap-container">
-      <section id="home-page" class="snap-section">
-        <div class="container">
-          <div class="introduction">
-            <div class="tag">
-              <span class="dot"></span>
-              <span>innovation hub at uhbc</span>
+               fill="white"
+               d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm242.5-97.5Q420-475 420-500t-17.5-42.5Q385-560 360-560t-42.5 17.5Q300-525 300-500t17.5 42.5Q335-440 360-440t42.5-17.5Zm240 0Q660-475 660-500t-17.5-42.5Q625-560 600-560t-42.5 17.5Q540-525 540-500t17.5 42.5Q575-440 600-440t42.5-17.5ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"
+               />
+         </svg>
+      </div>
+      <div id="chat-bot-container" class="hidden">
+         <div class="chat-header">
+            <div class="bot-info">
+               <div class="bot-icon-circle">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     height="24px"
+                     viewBox="0 -960 960 960"
+                     width="24px"
+                     >
+                     <path
+                        fill="white"
+                        d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm242.5-97.5Q420-475 420-500t-17.5-42.5Q385-560 360-560t-42.5 17.5Q300-525 300-500t17.5 42.5Q335-440 360-440t42.5-17.5Zm240 0Q660-475 660-500t-17.5-42.5Q625-560 600-560t-42.5 17.5Q540-525 540-500t17.5 42.5Q575-440 600-440t42.5-17.5ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"
+                        />
+                  </svg>
+               </div>
             </div>
-            <h1 class="title tighter-text">
-              Shaping the<br /><span class="highlight">Future of AI</span
-              ><br />in Algeria
-            </h1>
-            <p class="description">
-              Maison de l'IA is the epicenter of artificial intelligence
-              research, learning, and innovation at Université Hassiba Benbouali
-              de Chlef. Join a community of visionaries.
-            </p>
-            <div class="nav-btns">
-              <a id="explore-btn" href="#projects-gallery">
-                Explore Projects
-                <svg
-                  viewBox="0 0 448 512"
-                  width="16px"
-                  height="16px"
-                  class="theme"
-                >
+            <div class="text-info">
+               <strong>AI House Assistant</strong>
+               <p>Always here to help</p>
+            </div>
+         </div>
+         <div class="chat-messages">
+            <div class="message-column">
+               <p class="message-bubble ltr">
+                  Hello! I'm the AI House assistant. How can I help you today?
+               </p>
+               <p class="message-bubble rtl">
+                  Hi, I was wondering if you can help me with a question.
+               </p>
+            </div>
+         </div>
+         <div class="chat-input-area">
+            <input type="text" placeholder="Type a message..." autocomplete="off" />
+            <button class="send-btn">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                  >
                   <path
-                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                  ></path>
-                </svg>
-              </a>
-              <a id="impact-btn" href="#events">
-                <svg viewBox="0 0 576 512" width="20px" height="20px">
-                  <path
-                    fill="rgb(0, 168, 89)"
-                    d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"
-                  ></path>
-                </svg>
-                View Impact
-              </a>
-            </div>
-            <div class="reputation">
-              <p>Supported by Academic Leaders</p>
-              <div>
-                <div>
-                  <img
-                    src="assets/images/info-brain.png"
-                    alt="Infobrain Logo"
-                    width="22"
-                    height="22"
-                  />
-                  <span>InfoBrains</span>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/uhbc.png"
-                    alt="Hassiba Ben Bouali University"
-                    width="26"
-                    height="26"
-                  />
-                  <span>UHBC</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="image animate-float">
-            <div class="background-bubble"></div>
-            <img
-              src="./assets/images/brain.png"
-              alt="Innovation Hub Image"
-              width="500"
-              height="500"
-            />
-          </div>
-        </div>
-      </section>
-      <section id="projects-gallery" class="snap-section"></section>
-      <section id="events" class="snap-section"></section>
-      <section id="our-team" class="snap-section">
-        <div class="container">
-          <div class="header">
-            <div class="tag">
-              <span class="dot"></span>
-              <span>OUR TEAM</span>
-            </div>
-            <h1 class="title">
-              Meet The<br /><span class="highlight">People</span><br />Behind AI
-              House
-            </h1>
-            <p class="subtitle">
-              Dedicated faculty and student leaders driving AI innovation at
-              UHBC.
-            </p>
-          </div>
-          <div class="team-grid">
-            <div class="card">
-              <div class="pfp">MD</div>
-              <div>
-                <h2>Darmech Mammar</h2>
-                <p class="role">Technical Lead</p>
-              </div>
-              <p class="bio">
-                Associate Professor of Computer Science, specializing in deep
-                learning and NLP.
-              </p>
-              <div class="social-media">
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="black"
-                  >
-                    <path
-                      d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
-                    />
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg width="14" height="14" viewBox="0 0 20 20" version="1.1">
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Dribbble-Light-Preview"
-                        transform="translate(-180.000000, -7479.000000)"
-                      >
-                        <g
-                          id="icons"
-                          transform="translate(56.000000, 160.000000)"
-                        >
-                          <path
-                            d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
-                            id="linkedin-[#161]"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    height="16"
-                  >
-                    <path
-                      d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.022 4.388 11.022 10.125 11.927v-8.438H7.078V12.07h3.047V9.412c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.953.925-1.953 1.874v2.265h3.328l-.532 3.492h-2.796v8.438C19.612 23.095 24 18.095 24 12.073z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="pfp">ND</div>
-              <div>
-                <h2>Dendane Nesrine</h2>
-                <p class="role">Club President</p>
-              </div>
-              <p class="bio">
-                Master's student in AI, passionate about making AI education
-                accessible in Algeria.
-              </p>
-              <div class="social-media">
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="black"
-                  >
-                    <path
-                      d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
-                    />
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg width="14" height="14" viewBox="0 0 20 20" version="1.1">
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Dribbble-Light-Preview"
-                        transform="translate(-180.000000, -7479.000000)"
-                      >
-                        <g
-                          id="icons"
-                          transform="translate(56.000000, 160.000000)"
-                        >
-                          <path
-                            d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
-                            id="linkedin-[#161]"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    height="16"
-                  >
-                    <path
-                      d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.022 4.388 11.022 10.125 11.927v-8.438H7.078V12.07h3.047V9.412c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.953.925-1.953 1.874v2.265h3.328l-.532 3.492h-2.796v8.438C19.612 23.095 24 18.095 24 12.073z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="pfp">SG</div>
-              <div>
-                <h2>Ghazali Souad</h2>
-                <p class="role">Workshops Coordinator</p>
-              </div>
-              <p class="bio">
-                Mathematics student organizing weekly coding sessions and
-                bootcamps.
-              </p>
-              <div class="social-media">
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="black"
-                  >
-                    <path
-                      d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
-                    />
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg width="14" height="14" viewBox="0 0 20 20" version="1.1">
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Dribbble-Light-Preview"
-                        transform="translate(-180.000000, -7479.000000)"
-                      >
-                        <g
-                          id="icons"
-                          transform="translate(56.000000, 160.000000)"
-                        >
-                          <path
-                            d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
-                            id="linkedin-[#161]"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    height="16"
-                  >
-                    <path
-                      d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.022 4.388 11.022 10.125 11.927v-8.438H7.078V12.07h3.047V9.412c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.953.925-1.953 1.874v2.265h3.328l-.532 3.492h-2.796v8.438C19.612 23.095 24 18.095 24 12.073z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="pfp">MM</div>
-              <div>
-                <h2>Manar</h2>
-                <p class="role">Faculty Advisor</p>
-              </div>
-              <p class="bio">
-                CS senior leading the robotics and computer vision projects at
-                AI House.
-              </p>
-              <div class="social-media">
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
-                    />
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg width="14" height="14" viewBox="0 0 20 20" version="1.1">
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Dribbble-Light-Preview"
-                        transform="translate(-180.000000, -7479.000000)"
-                      >
-                        <g
-                          id="icons"
-                          transform="translate(56.000000, 160.000000)"
-                        >
-                          <path
-                            d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
-                            id="linkedin-[#161]"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    height="16"
-                  >
-                    <path
-                      d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.022 4.388 11.022 10.125 11.927v-8.438H7.078V12.07h3.047V9.412c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.953.925-1.953 1.874v2.265h3.328l-.532 3.492h-2.796v8.438C19.612 23.095 24 18.095 24 12.073z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="events-container" class="snap-section">
-         <header class="header">
-            <p class="subtitle">EVENTS & ACTIVITIES</p>
-             <h1>Upcoming <span>events</span></h1>
-            <p class="description">Stay tuned for workshops, hackathons, and guest lectures at AI House.</p>
-    </header>
-     <div class="cards-grid">
-        <div class="card">
-          <div class="image-box   businesswoman.jpg">
-                <span class="badge orange">Upcoming</span>
-            </div>
-            <div class="card-content">
-                <h3>AI Hackathon 2026</h3>
-                <p>48-hour challenge to build innovative AI solutions for real Algerian problems. Teams of 2-5 students compete for prizes and mentorship opportunities.</p>
-                <ul class="details">
-                    <li> <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      height="24px"
-                       viewBox="0 -960 960 960"
-                       width="24px" 
-                       fill="#1f1f1f">
-                       <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-188.5-11.5Q280-423 280-440t11.5-28.5Q303-480 320-480t28.5 11.5Q360-457 360-440t-11.5 28.5Q337-400 320-400t-28.5-11.5ZM640-400q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-188.5-11.5Q280-263 280-280t11.5-28.5Q303-320 320-320t28.5 11.5Q360-297 360-280t-11.5 28.5Q337-240 320-240t-28.5-11.5ZM640-240q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
-                      </svg>
-                      Apr 15-17, 2026</li>
-                    <li> <svg 
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px" 
-                      viewBox="0 -960 960 960" 
-                      width="24px" 
-                      fill="#1f1f1f">
-                      <path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/>
-                    </svg>
-                      Starts 9:00 AM</li>
-                    <li> <svg
-                       xmlns="http://www.w3.org/2000/svg" 
-                       height="24px"
-                       viewBox="0 -960 960 960" 
-                       width="24px"
-                      fill="#1f1f1f">
-                      <path d="M440-400h80v-120h120v-80H520v-120h-80v120H320v80h120v120Zm40 214q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
-                      UHBC Main Auditorium</li>
-                </ul>
-        </div>
-     </div>
-
-      </section>
-      <section id="apply-form" class="snap-section">
-        <div class="container">
-          <div class="header">
-            <div class="tag">
-              <span class="dot"></span>
-              <span> JOIN AI HOUSE</span>
-            </div>
-            <h1 class="title">
-              Apply to be part of the
-              <span class="highlight"> innovation </span>
-            </h1>
-            <p>
-              Whether you're passionate about AI, machine learning, or robotics
-              — we welcome students from all backgrounds.
-            </p>
-          </div>
-          <div class="content">
-            <div class="stats-section">
-              <div class="perks">
-                <div class="perk">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
-                      />
-                    </svg>
-                  </span>
-                  <div>
-                    <h3>AI Workshops & Bootcamps</h3>
-                    <p>Weekly hands-on sessions</p>
-                  </div>
-                </div>
-                <div class="perk">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
-                      />
-                    </svg>
-                  </span>
-                  <div>
-                    <h3>Research Mentorship</h3>
-                    <p>Guided by UHBC faculty</p>
-                  </div>
-                </div>
-                <div class="perk">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
-                      />
-                    </svg>
-                  </span>
-                  <div>
-                    <h3>Real Project Experience</h3>
-                    <p>Build your portfolio</p>
-                  </div>
-                </div>
-                <div class="perk">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.9 2.9 1.3.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.35.5 12 .5z"
-                      />
-                    </svg>
-                  </span>
-                  <div>
-                    <h2>AI Community Access</h2>
-                    <p>Network with professionals</p>
-                  </div>
-                </div>
-              </div>
-              <div class="achievments">
-                <div class="achievment">
-                  <h2>50+</h2>
-                  <p>Memebers</p>
-                </div>
-                <div class="achievment">
-                  <h2>12</h2>
-                  <p>Projects</p>
-                </div>
-                <div class="achievment">
-                  <h2>8</h2>
-                  <p>Workshops</p>
-                </div>
-              </div>
-            </div>
-            <div class="form-section">
-              <div class="header">
-                <div class="form-title">
-                  <h2>Application Form</h2>
-                  <p>Fill in your details to apply</p>
-                </div>
-                <div class="tracker">
-                  <div id="dot_1" class="bar"></div>
-                  <div id="dot_2" class="bar"></div>
-                  <div id="dot_3" class="bar"></div>
-                  <div id="dot_4" class="bar"></div>
-                </div>
-              </div>
-
-              <form>
-               <div class="input-wrapper">
-                  <span>
-                     <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#FFFFFF"><path d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm296.5-343.5Q560-607 560-640t-23.5-56.5Q513-720 480-720t-56.5 23.5Q400-673 400-640t23.5 56.5Q447-560 480-560t56.5-23.5ZM480-640Zm0 400Z"/></svg>
-                     <label> Full Name </label>
-                  </span>
-                  <input id="name" type="text" placeholder="Insert your name" />
-               </div>
-
-               <div class="input-wrapper">
-                  <span>
-                     <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>                  
-                     <label> Email Address </label>
-
-                  </span>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="youremail@univ-chlef.dz"
-                  />
-               </div>
-
-               <div class="double-input-wrapper">
-                  <div class="input-wrapper">
-                     <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#FFFFFF"><path d="m240-160 40-160H120l20-80h160l40-160H180l20-80h160l40-160h80l-40 160h160l40-160h80l-40 160h160l-20 80H660l-40 160h160l-20 80H600l-40 160h-80l40-160H360l-40 160h-80Zm140-240h160l40-160H420l-40 160Z"/></svg>                     
-                        <label> Student ID </label>
-                     </span>
-                     <input id="studentid" type="text" placeholder="ex.2026322708" />
-                  </div>
-                  <div class="input-wrapper">
-                     <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#FFFFFF"><path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"/></svg>
-                        <label> Department Of </label>
-                     </span>
-                     <select id="department">
-                        <option values="">Select</option>
-                        <option>Computer Science</option>
-                        <option>Mathematics</option>
-                        <option>Electronics</option>
-                        <option>Chemistry</option>
-                        <option>Physics</option>
-                        <option>Other</option>
-                     </select>
-                  </div>
-               </div>
-                <button type="submit">Submit Application</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact-us" class="snap-section">
-        <div class="wrap">
-          <span class="cont-first">GET IN TOUCH</span>
-
-          <h1 class="cont-title"><span class="colored">Contact</span> Us</h1>
-
-          <p class="cont-text">
-            Partners, researchers or students -The UHBC AI HOUSE is your space to
-            innovation and academic excellence
-          </p>
-
-          <div class="btns">
-            <a href="#" class="join-btn"> Join now </a>
-
-            <a href="mailto:aihouse@univ-chlef.dz" class="email-btn">
-              aihouse@univchlef.dz
-            </a>
-          </div>
-
-          <div class="links">
-            <a
-              href="www.facebook.com/share/17fdU4cDRw"
-              class="link-btn"
-              target="_blank"
-              >Facebook</a
-            >
-
-            <a
-              href="https://www.instagram.com/aihouseuhbc/"
-              class="link-btn"
-              target="_blank"
-              >Instagram </a
-            >
-
-            <a href="*" class="link-btn" target="_blank">GitHub</a>
-          </div>
-
-          <p class="last-note">
-            © 2026 AI House — Hassiba Benbouali University of Chlef.
-          </p>
-        </div>
-      </section>
-      <section id="footer" class="snap-section">
-        <div id="footer-content" class="footer-section">
-          <div class="footer-container">
-            <div class="footer-content">
-              <div class="footer-text">
-                <p>Get In TOUCH</p>
-                <h1>Contact Us</h1>
-              </div>
-              <div class="footer-box">
-               <div class="Email-box">
-                This is Email box
-               </div class="Location">
-               <div>
-                This is Location Box
-               </div class="Website">
-               <div>
-                This is Website section
-               </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <div id="chat-bot">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="24px"
-        viewBox="0 -960 960 960"
-        width="24px"
-      >
-        <path
-          fill="white"
-          d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm242.5-97.5Q420-475 420-500t-17.5-42.5Q385-560 360-560t-42.5 17.5Q300-525 300-500t17.5 42.5Q335-440 360-440t42.5-17.5Zm240 0Q660-475 660-500t-17.5-42.5Q625-560 600-560t-42.5 17.5Q540-525 540-500t17.5 42.5Q575-440 600-440t42.5-17.5ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"
-        />
-      </svg>
-    </div>
-    <div id="chat-bot-container" class="hidden">
-      <div class="chat-header">
-        <div class="bot-info">
-          <div class="bot-icon-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-            >
-              <path
-                fill="white"
-                d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm242.5-97.5Q420-475 420-500t-17.5-42.5Q385-560 360-560t-42.5 17.5Q300-525 300-500t17.5 42.5Q335-440 360-440t42.5-17.5Zm240 0Q660-475 660-500t-17.5-42.5Q625-560 600-560t-42.5 17.5Q540-525 540-500t17.5 42.5Q575-440 600-440t42.5-17.5ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="text-info">
-          <strong>AI House Assistant</strong>
-          <p>Always here to help</p>
-        </div>
+                     fill="white"
+                     d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"
+                     />
+               </svg>
+            </button>
+         </div>
       </div>
-      <div class="chat-messages">
-        <div class="message-column">
-          <p class="message-bubble ltr">
-            Hello! I'm the AI House assistant. How can I help you today?
-          </p>
-          <p class="message-bubble rtl">
-            Hi, I was wondering if you can help me with a question.
-          </p>
-        </div>
-      </div>
-      <div class="chat-input-area">
-        <input type="text" placeholder="Type a message..." />
-        <button class="send-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="20px"
-            viewBox="0 -960 960 960"
-            width="20px"
-          >
-            <path
-              fill="white"
-              d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </body>
-
-  <script src="js/chatbot.js"></script>
-  <script src="js/scroll.js"></script>
-  <script src="js/theme.js"></script>
-  <script src="js/tracker.js"></script>
+   </body>
+   <script src="js/chatbot.js"></script>
+   <script src="js/scroll.js"></script>
+   <script src="js/theme.js"></script>
+   <script src="js/tracker.js"></script>
 </html>

@@ -1,16 +1,21 @@
-function updatetracker() {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let id = document.getElementById("studentid").value;
-  let dept = document.getElementById("department").value;
+const dots = new Map([
+  ["name", document.getElementById("dot_1")],
+  ["email", document.getElementById("dot_2")],
+  ["id", document.getElementById("dot_3")],
+  ["dept", document.getElementById("dot_4")],
+]);
+const form = document.querySelector("#apply-form form");
 
-  let step1 = document.getElementById("dot1");
-  let step2 = document.getElementById("dot2");
-  let step3 = document.getElementById("dot3");
-  let step4 = document.getElementById("dot4");
+form.addEventListener("input", (event) => {
+  console.log(`Changed: ${event.target.name} = ${event.target.value}`);
+});
 
-  step1.style.background = name ? "#027e02" : "#1b2742";
-  step2.style.background = email ? "#FF7D04" : "#1b2742";
-  step3.style.background = id ? "#027e02" : "#1b2742";
-  step4.style.background = dept ? "#FF7D04" : "#111827";
-}
+form.addEventListener("input", (event) => {
+  const { target } = event;
+  const dot = dots.get(target.name);
+
+  const isActive =
+    target.name === "dept" ? target.value !== "Select" : target.value !== "";
+
+  dot.classList.toggle("active", isActive);
+});
