@@ -105,6 +105,18 @@
   }
 }
 
+@media (max-height: 980px) and (max-width: 484px) {
+  #our-team .tag,
+  #our-team .subtitle,
+  #our-team .bio {
+    display: none;
+  }
+
+  #our-team .container {
+    gap: 40px;
+  }
+}
+
 @media (max-height: 642px) {
   #our-team .container {
     gap: 15px;

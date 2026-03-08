@@ -1,3 +1,5 @@
+console.log("chatbot.js loaded");
+
 const chatBot = document.getElementById("chat-bot");
 const container = document.getElementById("chat-bot-container");
 
@@ -15,4 +17,57 @@ chatBot.addEventListener("click", () => {
   } else {
     chatBot.innerHTML = robotSvg;
   }
+});
+
+const chatInput = document.querySelector(
+  "#chat-bot-container .chat-input-area input",
+);
+const sendBtn = document.querySelector("#chat-bot-container .send-btn");
+const messagesContainer = document.querySelector(
+  "#chat-bot-container .message-column",
+);
+
+console.log("chatInput:", chatInput);
+console.log("sendBtn:", sendBtn);
+console.log("messagesContainer:", messagesContainer);
+
+let lastCall = 0;
+
+async function sendMessage() {
+  const text = chatInput.value.trim();
+  if (!text) return;
+
+  const now = Date.now();
+  if (now - lastCall < 2000) return;
+  lastCall = now;
+
+  displayMessage(text, "rtl");
+  chatInput.value = "";
+
+  try {
+    const res = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: text }),
+    });
+    const data = await res.json();
+    displayMessage(data.reply || data.error || "No response", "ltr");
+  } catch {
+    displayMessage("Sorry, I'm having trouble connecting.", "ltr");
+  }
+}
+
+function displayMessage(text, direction) {
+  console.log("Displaying message:", text);
+  const bubble = document.createElement("p");
+  bubble.className = `message-bubble ${direction}`;
+  bubble.textContent = text;
+  messagesContainer.appendChild(bubble);
+  messagesContainer.parentElement.scrollTop =
+    messagesContainer.parentElement.scrollHeight;
+}
+
+sendBtn.addEventListener("click", sendMessage);
+chatInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") sendMessage();
 });

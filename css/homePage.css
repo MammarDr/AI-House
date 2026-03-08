@@ -145,6 +145,12 @@ section#home-page .image img {
   }
 }
 
+@media (max-height: 980px) and (max-width: 484px) {
+  section {
+    padding-top: 4rem;
+  }
+}
+
 @media (max-height: 664px) {
   section#home-page .title {
     font-size: clamp(2.5rem, 2vh + 1rem, 3.5rem);

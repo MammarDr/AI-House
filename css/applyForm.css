@@ -230,7 +230,17 @@ section#apply-form .content .form-section .double-input-wrapper {
   section#apply-form .content .form-section .form-header .tracker {
     margin-left: auto;
   }
+
+  section#apply-form .content .form-section .double-input-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  section#apply-form .content .form-section form {
+    gap: 15px;
+  }
 }
+
 @media (max-height: 814px) {
   section#apply-form .content .form-section .form-header .form-title,
   section#apply-form .content .stats-section .achievments,
@@ -248,5 +258,15 @@ section#apply-form .content .form-section .double-input-wrapper {
 
   section#apply-form .content .stats-section .perks {
     margin: auto;
+  }
+}
+
+@media (max-height: 980px) and (max-width: 484px) {
+  section#apply-form section {
+    padding-top: 2rem;
+  }
+
+  section#apply-form .container {
+    gap: 1rem;
   }
 }
