@@ -1,5 +1,6 @@
 section#events {
   flex-direction: column;
+  align-items: center;
   gap: 40px;
 }
 
@@ -38,7 +39,6 @@ section#events .image-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
 }
 
 section#events .header {
@@ -76,6 +76,9 @@ section#events .card:hover {
 }
 
 section#events .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 2rem;
 }
 
@@ -96,7 +99,6 @@ section#events .details {
   list-style: none;
   font-size: 14px;
   padding: 0;
-  margin-bottom: 30px;
 }
 
 section#events .details li {
@@ -115,4 +117,44 @@ section#events .learn-more {
 
 section#events .learn-more:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1028px) {
+  section#events .cards-grid {
+    flex-direction: column;
+  }
+
+  section#events .card {
+    width: 100%;
+  }
+
+  section#events .card-content p {
+    display: none;
+  }
+}
+
+@media (max-height: 1300px) {
+  section#events .header .description,
+  section#events .card-content p {
+    display: none;
+  }
+
+  section#events {
+    gap: 20px;
+  }
+
+  section#events .image-box {
+    height: 150px;
+  }
+}
+
+@media (max-height: 1000px) {
+  section#events {
+    justify-content: flex-start;
+    padding-top: 4rem;
+  }
+
+  section#events .card-content {
+    padding: 1rem;
+  }
 }

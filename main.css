@@ -99,7 +99,7 @@ li {
 }
 
 .hidden {
-  display: none;
+  display: none!important;
 }
 
 .tighter-text {
@@ -108,7 +108,7 @@ li {
 }
 
 main {
-  width: min(1236px, 90%);
+  width: min(1236px, 100%);
   margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -281,9 +281,7 @@ footer {
 }
 
 @media (max-width: 642px) {
-  main {
-    width: 100%;
-  }
+
 }
 
 @media (max-height: 1062px) {

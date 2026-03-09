@@ -1,4 +1,91 @@
-#footer {
+section#footer {
+  color: #ffffff;
+  padding: 80px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+section#footer .text p {
+  color: #ff6600;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+section#footer .footer-container .title {
+  margin-top: 5%;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 40px;
+   background: linear-gradient(
+    39deg,
+     rgba(40, 142, 35, 1) 0%,
+     rgba(76, 139, 31, 1) 20%,
+     rgba(110, 137, 27, 1) 35%,
+     rgba(145, 134, 23, 1) 56%,
+     rgba(170, 132, 20, 1) 73%,
+     rgba(170, 132, 20, 1) 100%,
+     rgba(255, 255, 255, 1) 100%);
+       -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+section#footer .contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+section#footer .contact-card {
+
+   background: transparent;
+  border: 1px solid #666;
+  border-radius: 15px;
+  padding: 30px;
+  width: 280px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+section#footer.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: #2ecc71;
+}
+
+section#footer.contact-card i {
+  color: #2ecc71;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+section#footer.contact-card h3 {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+section#footer .contact-card p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff6600;
+}
+
+section#footer .copyright {
+  margin-top: 60px;
+  color: #666;
+  font-size: 14px;
+}
+section#footer .footer-box,
+.social-content {
+  margin-bottom: 30px;
+}
+
+/*#footer {
   background-size: 40px 40px;
   padding: 80px 20px;
   text-align: center;
@@ -88,7 +175,7 @@ section#footer .social-content a:hover {
   color: white;
   border-color: #2ecc71;
   background: rgba(46, 204, 113, 0.05);
-}
+}*/
 /* section#contact-us .wrap {
   text-align: center;
   max-width: 500px;
@@ -155,6 +242,8 @@ section#contact-us .last-note {
   font-size: 15px;
   color: rgb(205, 174, 133);
 }*/
+
+/*
 .footer-section {
   display: flex;
   width: 100%;
@@ -228,3 +317,4 @@ section#contact-us .last-note {
   border: 2px solid;
   border-radius: 8px;
 }
+*/
