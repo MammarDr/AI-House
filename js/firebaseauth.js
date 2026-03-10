@@ -1,9 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
 import {
-  getAuth,
-  createUserWithEmailAndPassword,
-} from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
-import {
   getFirestore,
   collection,
   addDoc,
@@ -19,31 +15,31 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
 const db = getFirestore(app);
 
-const signup = document.getElementById("Submit Application");
+const form = document.querySelector("#apply-form form");
 
-signup.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
-  const name = document.getElementById("Full Name").value;
-  const studentId = document.getElementById("Student ID").value;
-  const department = document.getElementById("Department Of").value;
+  const studentId = document.getElementById("studentid").value;
+  const department = document.getElementById("department").value;
 
-  createUserWithEmailAndPassword(auth, email, password).then(
-    (userCredential) => {
-      const user = userCredential.user;
-
-      return addDoc(collection(db, "users"), {
-        uid: user.uid,
-        email: email,
-        name: name,
-        studentId: studentId,
-        department: department,
-        createdAt: new Date(),
-      });
-    },
-  );
+  addDoc(collection(db, "applications"), {
+    name: name,
+    email: email,
+    studentId: studentId,
+    department: department,
+    submittedAt: new Date(),
+  })
+    .then(() => {
+      alert("Application submitted successfully!!");
+      form.reset();
+    })
+    .catch((error) => {
+      console.error("Error saving application:", error);
+      alert("Failed to submit application. Please try again.");
+    });
 });
