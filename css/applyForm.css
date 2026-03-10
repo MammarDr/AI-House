@@ -1,14 +1,5 @@
 section#apply-form .container {
-  flex-direction: column;
-  gap: 6rem;
-}
-
-section#apply-form .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
+  gap: 4rem;
 }
 
 section#apply-form .content {
@@ -241,7 +232,7 @@ section#apply-form .content .form-section .double-input-wrapper {
   }
 }
 
-@media (max-height: 814px) {
+/* @media (max-height: 814px) {
   section#apply-form .content .form-section .form-header .form-title,
   section#apply-form .content .stats-section .achievments,
   section#apply-form .header .tag {
@@ -269,4 +260,4 @@ section#apply-form .content .form-section .double-input-wrapper {
   section#apply-form .container {
     gap: 1rem;
   }
-}
+} */

@@ -1,8 +1,10 @@
 #chat-bot {
-  display: flex;
-  position: absolute;
+  position: fixed;
   bottom: 2%;
   right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
   border-radius: 100%;
   background-image: var(--gradient-secondary);
@@ -75,10 +77,11 @@
   font-size: 12px;
   margin-top: 2px;
 }
+
 #chat-bot-container .chat-messages {
-  margin-bottom: auto;
+  height: 100%;
   padding: 1rem;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #chat-bot-container .message-column {
@@ -142,4 +145,17 @@
 #chat-bot-container .send-btn span {
   font-size: 20px;
   margin: 0;
+}
+
+@media (max-width: 720px) {
+  #chat-bot {
+    width: 42px;
+    height: 42px;
+  }
+
+  #chat-bot svg {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+  }
 }

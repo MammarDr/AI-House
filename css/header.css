@@ -1,85 +1,51 @@
 header {
+  position: static;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2%;
-  width: 100%;
+  padding: 2rem 1.5rem;
   background: rgb(var(--theme-background));
   border-bottom: 1px solid rgb(var(--theme-text), 0.1);
+}
+
+header.header-hidden {
   display: none;
 }
 
-header .logo {
+header div {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  width: 20%;
-}
-header .logo-icon {
-  display: flex;
-
-  justify-content: center;
-}
-header .logo-icon img {
-  width: 2.8rem;
-  height: auto;
-  display: block;
 }
 
-.logo-text {
+header .logo {
+  background-image: var(--gradient-secondary);
+  border-radius: 15px;
+  padding: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+header .name {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  justify-content: center;
-  margin-left: 6%;
+  align-items: start;
 }
 
-.logo-text h1 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0;
-  line-height: 1.2;
-}
-.logo-text p {
-  font-size: 0.8rem;
-  margin: 0;
+header .name span {
+  font-family: "roboto";
+  color: rgb(var(--theme-text-secondary));
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-nav a {
+header div a {
   text-decoration: none;
-  color: rgb(var(--theme-text), 0.75);
-  font-size: 0.95rem;
   font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
   color: #fff;
+  background-image: var(--gradient-primary);
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 15px;
 }
 
-nav a[href="#apply-form"] {
-  background-color: #fff;
-  color: #000;
-  padding: 0.5rem 1.1rem;
-  border-radius: 1.14rem;
-  font-weight: bold;
-  transition:
-    transform 0.3s ease,
-    background-color 0.3s ease;
-}
-
-nav a[href="#apply-form"]:hover {
-  background-color: rgb(var(--color-secondary));
-  transform: scale(1.05);
-}
-
-#theme {
+header #theme {
   background: transparent;
   border: none;
   display: flex;
@@ -87,7 +53,49 @@ nav a[href="#apply-form"]:hover {
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 99px;
+  margin-left: 0.5rem;
 }
-#theme:hover {
+
+header #theme:hover {
   background: rgb(var(--theme-text), 0.1);
+}
+
+@media (max-width: 460px) {
+  header {
+    padding: 1rem;
+  }
+  header .logo {
+    padding: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  header .logo svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  header .name {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  header .name h2 {
+    font-size: 18px;
+  }
+
+  header .name span {
+    font-size: 12px;
+  }
+
+  header div a {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    margin-right: 0.25rem;
+  }
+
+  header #theme {
+    padding: 0.25rem;
+    margin-left: 0.25rem;
+  }
 }

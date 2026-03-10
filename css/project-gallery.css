@@ -1,23 +1,12 @@
-#projects-gallery .container {
-  flex-direction: column;
-  gap: 25px;
-}
-
-#projects-gallery .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  text-align: center;
-}
-
 #projects-gallery .filters {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 18px;
   text-align: center;
   margin: auto;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #projects-gallery .filters span {
@@ -136,7 +125,7 @@
 /* aaaaaaaaaaa */
 
 #pop-up {
-  position: absolute;
+  position: fixed;
   inset: 0;
   backdrop-filter: blur(64px);
   height: 100vh;
@@ -149,6 +138,7 @@
   width: min(600px, 90%);
   border-radius: 99px;
   height: fit-content;
+  gap: 0;
 }
 
 section#projects-gallery #pop-up .card-header {
@@ -323,5 +313,14 @@ section#projects-gallery #pop-up .card-footer .btn-primary:hover {
 
   #projects-gallery .projects .project img:hover {
     scale: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  #projects-gallery .filters {
+    gap: 5px;
+  }
+  #projects-gallery .filters span {
+    font-size: 11px;
   }
 }

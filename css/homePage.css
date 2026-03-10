@@ -1,27 +1,26 @@
 section#home-page .container {
-  gap: 20px;
+  flex-direction: row;
 }
 
-section#home-page .container .introduction {
-  display: flex;
-  flex-direction: column;
+section#home-page .container .header {
   gap: 2.5rem;
   flex: 1;
+  text-align: start;
+  align-items: start;
 }
 
-section#home-page .container .introduction .description {
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
+section#home-page .container .header .subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
   font-weight: 400;
-  color: rgb(var(--theme-text-secondary), 0.85);
   width: 90%;
 }
 
-section#home-page .container .introduction .nav-btns {
+section#home-page .container .header .nav-btns {
   display: flex;
   gap: 20px;
 }
 
-section#home-page .container .introduction .nav-btns a {
+section#home-page .container .header .nav-btns a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,27 +28,28 @@ section#home-page .container .introduction .nav-btns a {
   padding: 1rem 2rem;
   border-radius: 25px;
   text-wrap: nowrap;
+  font-weight: 400;
 }
 
-section#home-page .container .introduction .nav-btns a:nth-child(1) {
+section#home-page .container .header .nav-btns a:nth-child(1) {
   font-weight: 600;
   background-color: rgb(var(--theme-text));
   color: rgb(var(--theme-background));
 }
 
-section#home-page .container .introduction .nav-btns a:nth-child(1):hover {
+section#home-page .container .header .nav-btns a:nth-child(1):hover {
   scale: 1.05;
 }
 
-section#home-page .container .introduction .nav-btns a:nth-child(2) {
+section#home-page .container .header .nav-btns a:nth-child(2) {
   background-color: rgb(var(--theme-background));
   border: 2px solid rgb(var(--theme-text), 0.25);
 }
-section#home-page .container .introduction .nav-btns a:nth-child(2):hover {
+section#home-page .container .header .nav-btns a:nth-child(2):hover {
   background-color: rgb(var(--theme-text), 0.025);
 }
 
-section#home-page .container .introduction .reputation {
+section#home-page .container .header .reputation {
   color: rgb(var(--theme-text-secondary));
   font-weight: 500;
   font-size: 0.875rem;
@@ -61,7 +61,7 @@ section#home-page .container .introduction .reputation {
   width: 90%;
 }
 
-section#home-page .container .introduction .reputation > div {
+section#home-page .container .header .reputation > div {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -69,18 +69,18 @@ section#home-page .container .introduction .reputation > div {
   margin-top: 0.5rem;
 }
 
-section#home-page .container .introduction .reputation > div div {
+section#home-page .container .header .reputation > div div {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-section#home-page .container .introduction .reputation > div span {
+section#home-page .container .header .reputation > div span {
   color: rgb(var(--theme-text-secondary));
   font-weight: 800;
 }
 
-section#home-page .container .introduction .reputation > div img {
+section#home-page .container .header .reputation > div img {
   opacity: 0.8;
 }
 
@@ -118,16 +118,16 @@ section#home-page .image img {
     display: none;
   }
 
-  section#home-page .container .introduction {
+  section#home-page .container .header {
     gap: 1rem;
     align-items: center;
     text-align: center;
   }
 
-  section#home-page .container .introduction .description {
+  section#home-page .container .header .subtitle {
     margin: 1rem 0;
   }
-  section#home-page .container .introduction .reputation {
+  section#home-page .container .header .reputation {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,17 +135,17 @@ section#home-page .image img {
 }
 
 @media (max-width: 642px) {
-  section#home-page .container .introduction .nav-btns {
+  section#home-page .container .header .nav-btns {
     flex-direction: column;
     width: 100%;
   }
 
-  section#home-page .container .introduction .nav-btns a:nth-child(1):hover {
+  section#home-page .container .header .nav-btns a:nth-child(1):hover {
     scale: 1;
   }
 }
 
-@media (max-height: 980px) and (max-width: 484px) {
+/* @media (max-height: 980px) and (max-width: 484px) {
   section#home-page section {
     padding-top: 4rem;
   }
@@ -156,8 +156,8 @@ section#home-page .image img {
     font-size: clamp(2.5rem, 2vh + 1rem, 3.5rem);
   }
   section#home-page .image,
-  section#home-page .container .introduction .tag,
-  section#home-page .container .introduction .reputation {
+  section#home-page .container .header .tag,
+  section#home-page .container .header .reputation {
     display: none;
   }
 }
@@ -166,4 +166,4 @@ section#home-page .image img {
   section#home-page .title {
     display: none;
   }
-}
+} */
