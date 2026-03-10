@@ -1,3 +1,7 @@
+#apply-form {
+  overflow-x: hidden;
+}
+
 section#apply-form .container {
   gap: 4rem;
 }

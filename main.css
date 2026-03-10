@@ -241,7 +241,7 @@ section {
 }
 
 .bg-touch-1 {
-  position: absolute;
+  position: fixed;
   bottom: -80px;
   left: -100px;
   width: 500px;
@@ -250,19 +250,21 @@ section {
   border-radius: 9999px;
   filter: blur(54px);
   z-index: 10;
+  pointer-events: none;
 }
 
 .bg-touch-2 {
-  position: absolute;
+  position: fixed;
   top: -100px;
-  right: -35px;
-  width: 500px;
-  height: 500px;
+  right: -100px;
+  width: 400px;
+  height: 450px;
   background: rgb(var(--color-primary));
   opacity: 0.1;
   border-radius: 9999px;
   filter: blur(54px);
   z-index: 10;
+  pointer-events: none;
 }
 
 svg {

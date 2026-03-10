@@ -55,4 +55,15 @@ section#contact-us .copyright {
   section#contact-us .copyright {
     font-size: 12px;
   }
+
+  section#contact-us .contact-card .key {
+    font-size: 18px;
+  } 
+
+   section#contact-us .contact-card .key svg {
+    width: 20px;
+    height: 20px;
+  } 
+
+
 }

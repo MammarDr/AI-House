@@ -253,7 +253,6 @@ section#projects-gallery #pop-up .card-body .tag-outline {
   border: 1px solid #1e293b;
   padding: 5px 12px;
   border-radius: 10px;
-  color: #ffffff;
   font-size: 12px;
 }
 
@@ -295,6 +294,10 @@ section#projects-gallery #pop-up .card-footer .btn-primary {
 section#projects-gallery #pop-up .card-footer .btn-primary:hover {
   background-color: #16a34a;
   transform: translateY(-2px);
+}
+
+section#projects-gallery #pop-up .card-footer .btn-primary svg {
+  fill: #ffffff;
 }
 
 @media (max-width: 1028px) {
