@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
     submittedAt: new Date(),
   })
     .then(() => {
-      alert("Application submitted successfully!");
+      alert("Application submitted successfully!!");
       form.reset();
     })
     .catch((error) => {
