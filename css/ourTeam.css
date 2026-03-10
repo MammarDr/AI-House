@@ -92,9 +92,6 @@
 }
 
 @media (max-height: 1062px) {
-  #our-team .container {
-    gap: 10px;
-  }
 
   #our-team .team-grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

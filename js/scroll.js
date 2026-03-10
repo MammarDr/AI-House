@@ -1,37 +1,69 @@
-const sections = document.querySelectorAll("section");
-const snapContainer = document.querySelector(".snap-container");
+// const sections =  Array.from(document.querySelectorAll("section"));
+// const snapContainer = document.querySelector(".snap-container");
 
-snapContainer.addEventListener("scrollend", () => {
-  const scrollY = snapContainer.scrollTop;
+// const navigators = document.querySelectorAll("#navigator a");
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - snapContainer.offsetTop;
-    const sectionHeight = section.offsetHeight;
-    const id = section.getAttribute("id");
-    const navigator = document.querySelector(`#navigator a[href="#${id}"]`);
+// navigators.forEach((navigator) => {
+//   navigator.addEventListener("click", (event) => {
+//     event.preventDefault();
+//     const target = event.currentTarget;
+//     const href = target.getAttribute("href");
+//     const section = document.querySelector(href);
 
-    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-      navigator?.classList.add("checked");
-    } else {
-      navigator?.classList.remove("checked");
-    }
-  });
-});
+//     if (section) {
+//       snapContainer.scrollTo({
+//         top: section.offsetTop - snapContainer.offsetTop,
+//         behavior: "smooth",
+//       });
+//     }
+//   });
+// });
 
-const navigators = document.querySelectorAll("#navigator a");
+// window.addEventListener("hashchange", () => {
+//   const hash = window.location.hash;
+//   if (hash) {
+//     const section = document.querySelector(hash);
+//     if (section) {
+//       snapContainer.scrollTo({
+//         top: section.offsetTop - snapContainer.offsetTop,
+//         behavior: "smooth",
+//       });
+//     }
+//   }
+// });
 
-navigators.forEach((navigator) => {
-  navigator.addEventListener("click", (event) => {
-    event.preventDefault();
-    const target = event.currentTarget;
-    const href = target.getAttribute("href");
-    const section = document.querySelector(href);
+// let isScrolling = false;;
+// snapContainer.addEventListener("wheel", (event) => {
+//   event.preventDefault();
+//   if (isScrolling) return;
+//   isScrolling = true;
 
-    if (section) {
-      snapContainer.scrollTo({
-        top: section.offsetTop - snapContainer.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  });
-});
+//   // Find the closest section to the current scroll position
+//   const scrollTop = snapContainer.scrollTop;
+//   let currentIndex = sections.findIndex(section => {
+//     const sectionTop = section.offsetTop - snapContainer.offsetTop;
+//     const sectionHeight = section.offsetHeight;
+//     return scrollTop >= sectionTop && scrollTop < sectionTop + sectionHeight;
+//   });
+
+//   let targetIndex = currentIndex;
+//   if (event.deltaY > 0 && currentIndex < sections.length - 1) {
+//     targetIndex = currentIndex + 1;
+//   } else if (event.deltaY < 0 && currentIndex > 0) {
+//     targetIndex = currentIndex - 1;
+//   }
+
+//   if (targetIndex !== currentIndex) {
+//     const targetSection = sections[targetIndex];
+//     snapContainer.scrollTo({
+//       top: targetSection.offsetTop - snapContainer.offsetTop,
+//       behavior: "smooth",
+//     });
+//     window.location.hash = targetSection.id;
+//     setTimeout(() => {
+//       isScrolling = false;
+//     }, 1000);
+//   } else {
+//     isScrolling = false;
+//   }
+// }, { passive: false });

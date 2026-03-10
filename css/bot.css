@@ -78,6 +78,7 @@
 #chat-bot-container .chat-messages {
   margin-bottom: auto;
   padding: 1rem;
+  overflow-y: scroll;
 }
 
 #chat-bot-container .message-column {
@@ -92,16 +93,17 @@
   max-width: 85%;
   line-height: 1.5;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 
 #chat-bot-container .message-bubble.ltr {
-  background-color: #29ccd8;
+  background-color: rgb(var(--color-primary));
   border-radius: 15px;
   border-top-left-radius: 2px;
   margin-right: auto;
 }
 #chat-bot-container .message-bubble.rtl {
-  background-color: #55d394;
+  background-color: rgb(var(--color-secondary));
   border-radius: 15px;
   border-bottom-right-radius: 2px;
   margin-left: auto;

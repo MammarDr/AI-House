@@ -1,5 +1,6 @@
 #projects-gallery .container {
   flex-direction: column;
+  gap: 25px;
 }
 
 #projects-gallery .header {

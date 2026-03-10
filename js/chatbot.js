@@ -45,13 +45,13 @@ async function sendMessage() {
   chatInput.value = "";
 
   try {
-    const res = await fetch("/api/chat", {
+    const res = await fetch("http://localhost:3000/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text }),
+      body: JSON.stringify({ prompt: text }),
     });
     const data = await res.json();
-    displayMessage(data.reply || data.error || "No response", "ltr");
+    displayMessage(data.text || data.error || "No response", "ltr");
   } catch {
     displayMessage("Sorry, I'm having trouble connecting.", "ltr");
   }
