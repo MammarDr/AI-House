@@ -1,5 +1,12 @@
+section#home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
 section#home-page .container {
   flex-direction: row;
+  margin: auto;
 }
 
 section#home-page .container .header {
@@ -97,11 +104,7 @@ section#home-page .image .background-bubble {
   top: 17%;
   left: 3%;
   z-index: -1;
-  background-image: linear-gradient(
-    to top right,
-    rgba(255, 127, 0, 0.2),
-    rgba(0, 168, 89, 0.2)
-  );
+  background-image: linear-gradient(to top right, rgba(255, 127, 0, 0.2), rgba(0, 168, 89, 0.2));
   filter: blur(54px);
   width: 80%;
   height: 80%;
@@ -170,82 +173,80 @@ section#home-page .image img {
   }
 } */
 
-
-
- section#home-page .card {
-    position:absolute;
-    padding:16px;
-    border-radius:12px;
-    border:1px solid rgb(var(--theme-text), 0.1);
-    box-shadow:0 10px 20px rgba(0,0,0,0.1);
-    background-color: rgb(var(--theme-text), 0.05);
-    animation:pulse 3s infinite;
-    transition: all;
+section#home-page .card {
+  position: absolute;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgb(var(--theme-text), 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgb(var(--theme-text), 0.05);
+  animation: pulse 3s infinite;
+  transition: all;
 }
 
 section#home-page #workshop-card {
-    bottom:-40px;
-    left:-40px; 
+  bottom: -40px;
+  left: -40px;
 }
 
 section#home-page #innovation-card {
-    top: 0px;
-    right: 40px;
-    z-index: -1;
+  top: 0px;
+  right: 40px;
+  z-index: -1;
 }
 
- section#home-page .content{
-    display:flex;
-    align-items:center;
-    gap:12px;
+section#home-page .content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
- section#home-page .icon{
-    width:40px;
-    height:40px;
-    border-radius:50%;
+section#home-page .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    background-color: rgb(var(--theme-text-secondary), 0.05); 
+  background-color: rgb(var(--theme-text-secondary), 0.05);
 }
 
- section#home-page .label{
-    font-size:12px;
-    margin:0;
-    color: rgb(var(--theme-text-secondary));
+section#home-page .label {
+  font-size: 12px;
+  margin: 0;
+  color: rgb(var(--theme-text-secondary));
 }
 
- section#home-page .title{
-    font-weight:bold;
-    margin:0;
+section#home-page .title {
+  font-weight: bold;
+  margin: 0;
 }
 
 @keyframes pulse {
-    0%{
-        transform: scale(1);
-        opacity: 1;
-    }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
 
-    25%{
-        transform: scale(1.02);
-        opacity: 0.8;
-    }
+  25% {
+    transform: scale(1.02);
+    opacity: 0.8;
+  }
 
-    50%{
-        transform: scale(1.05);
-        opacity: 0.6;
-    }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.6;
+  }
 
-    75%{
-        transform: scale(1.02);
-        opacity: 0.8;
-    }
+  75% {
+    transform: scale(1.02);
+    opacity: 0.8;
+  }
 
-    100%{
-        transform: scale(1);
-        opacity: 1;
-    }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
