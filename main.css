@@ -113,7 +113,6 @@ li {
 }
 
 main {
-  width: min(1236px, 100%);
   margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -128,6 +127,8 @@ main::-webkit-scrollbar {
 
 
 section {
+  width: min(1236px, 100%);
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +203,6 @@ section {
 }
 
 .snap-section {
-  width: 100%;
   min-height: 100vh;
   scroll-snap-align: start;
   overflow-y: hidden;
